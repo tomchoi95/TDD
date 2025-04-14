@@ -9,15 +9,17 @@ import XCTest
 @testable import Albertos
 
 final class AlbertosTests: XCTestCase {
+    // 빈 배열이 주어졌을 때, 빈 섹션 배열을 반환하는지 확인.
     func testEmptyMenuReturnsEmptySections() {
         let menu = [MenuItem]()
         let sections = groupMenuByCategory(menu)
         XCTAssertTrue(sections.isEmpty)
     }
     
+    // 하나의 카테고리에 속한 메뉴 항목들이 주어졌을 때, 하나의 섹션만 반환되는지 확인.
     func testMenuWithOneCategoryReturnsOneSection() {
         let menu = [
-            MenuItem(category: "pastas", name: "name")
+            MenuItem(category: "pastas", name: "name"),
             MenuItem(category: "pastas", name: "other name")
         ]
         let sections = groupMenuByCategory(menu)
@@ -28,6 +30,7 @@ final class AlbertosTests: XCTestCase {
         XCTAssertEqual(section.items.last?.name, "other name")
     }
     
+    // 여러 카테고리에 속한 메뉴 항목들이 주어졌을 때, 카테고리 수만큼 섹션이 생성이 되었는지 확인.
     func testMenuWithManyCategoriesReturnsManySectionsInReverseAlphabeticalOrder() {
         let menu = [
             MenuItem(category: "pastas",name: "a pasta"),
