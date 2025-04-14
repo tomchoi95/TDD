@@ -35,5 +35,5 @@ extension [MenuItem] {
 func groupMenuByCategory(_ menu: [MenuItem]) -> [MenuSection] {
     return Dictionary(grouping: menu, by: { $0.category } )
         .map { MenuSection(category: $0.key, items: $0.value) }
-        .sorted { $0.category < $1.category }
+        .sorted { $0.category > $1.category }
 }
