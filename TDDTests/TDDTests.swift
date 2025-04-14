@@ -11,26 +11,50 @@ import XCTest
 final class TDDTests: XCTestCase {
     
     func testFizzBuzzDivisibleBy3() {
-        let test = fizzBuzz(3)
+        // given (준비)
+        let input = 3
+        
+        // when (실행)
+        let result = fizzBuzz(input)
+        
+        // then (검증)
         let expected = "Fizz"
-        XCTAssertEqual(test, expected)
+        XCTAssertEqual(result, expected)
     }
     
     func testFizzBuzzDivisibleBy5() {
-        let test = fizzBuzz(5)
+        // given (준비)
+        let input = 5
+        
+        // when (실행)
+        let result = fizzBuzz(input)
+        
+        // then (검증)
         let expected = "Buzz"
-        XCTAssertEqual(test, expected)
+        XCTAssertEqual(result, expected)
     }
     
     func testFizzBuzzDivisibleBy15() {
-        let test = fizzBuzz(15)
+        // given (준비)
+        let input = 15
+        
+        // when (실행)
+        let result = fizzBuzz(input)
+        
+        // then (검증)
         let expected = "FizzBuzz"
-        XCTAssertEqual(test, expected)
+        XCTAssertEqual(result, expected)
     }
     
     func testFizzBuzzNotDivisibleBy3Or5() {
-        let test = fizzBuzz(2)
+        // given (준비)
+        let input = 2
+        
+        // when (실행)
+        let result = fizzBuzz(input)
+        
+        // then (검증)
         let expected = "2"
-        XCTAssertEqual(test, expected)
+        XCTAssertEqual(result, expected)
     }
 }
