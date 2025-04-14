@@ -14,12 +14,46 @@
 			remoteGlobalIDString = B366B1D32DACD4D4007C72B6;
 			remoteInfo = TDD;
 		};
+		B366B2372DAD0486007C72B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B366B1CC2DACD4D4007C72B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B366B2292DAD0484007C72B6;
+			remoteInfo = Albertos;
+		};
+		B366B2412DAD0486007C72B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B366B1CC2DACD4D4007C72B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B366B2292DAD0484007C72B6;
+			remoteInfo = Albertos;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B366B1D42DACD4D4007C72B6 /* TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B366B1E12DACD4D6007C72B6 /* TDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B366B22A2DAD0484007C72B6 /* Albertos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albertos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B366B2362DAD0486007C72B6 /* AlbertosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B366B2402DAD0486007C72B6 /* AlbertosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B366B2512DAD0500007C72B6 /* Exceptions for "Albertos" folder in "TDD" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Requirement,
+			);
+			target = B366B1D32DACD4D4007C72B6 /* TDD */;
+		};
+		B366B2522DAD0500007C72B6 /* Exceptions for "Albertos" folder in "Albertos" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Requirement,
+			);
+			target = B366B2292DAD0484007C72B6 /* Albertos */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B366B1D62DACD4D4007C72B6 /* TDD */ = {
@@ -30,6 +64,25 @@
 		B366B1E42DACD4D6007C72B6 /* TDDTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TDDTests;
+			sourceTree = "<group>";
+		};
+		B366B22B2DAD0484007C72B6 /* Albertos */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B366B2512DAD0500007C72B6 /* Exceptions for "Albertos" folder in "TDD" target */,
+				B366B2522DAD0500007C72B6 /* Exceptions for "Albertos" folder in "Albertos" target */,
+			);
+			path = Albertos;
+			sourceTree = "<group>";
+		};
+		B366B2392DAD0486007C72B6 /* AlbertosTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AlbertosTests;
+			sourceTree = "<group>";
+		};
+		B366B2432DAD0486007C72B6 /* AlbertosUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AlbertosUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -49,6 +102,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B366B2272DAD0484007C72B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B366B2332DAD0486007C72B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B366B23D2DAD0486007C72B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +131,9 @@
 			children = (
 				B366B1D62DACD4D4007C72B6 /* TDD */,
 				B366B1E42DACD4D6007C72B6 /* TDDTests */,
+				B366B22B2DAD0484007C72B6 /* Albertos */,
+				B366B2392DAD0486007C72B6 /* AlbertosTests */,
+				B366B2432DAD0486007C72B6 /* AlbertosUITests */,
 				B366B1D52DACD4D4007C72B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +143,9 @@
 			children = (
 				B366B1D42DACD4D4007C72B6 /* TDD.app */,
 				B366B1E12DACD4D6007C72B6 /* TDDTests.xctest */,
+				B366B22A2DAD0484007C72B6 /* Albertos.app */,
+				B366B2362DAD0486007C72B6 /* AlbertosTests.xctest */,
+				B366B2402DAD0486007C72B6 /* AlbertosUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +198,74 @@
 			productReference = B366B1E12DACD4D6007C72B6 /* TDDTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B366B2292DAD0484007C72B6 /* Albertos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B366B2482DAD0486007C72B6 /* Build configuration list for PBXNativeTarget "Albertos" */;
+			buildPhases = (
+				B366B2262DAD0484007C72B6 /* Sources */,
+				B366B2272DAD0484007C72B6 /* Frameworks */,
+				B366B2282DAD0484007C72B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B366B22B2DAD0484007C72B6 /* Albertos */,
+			);
+			name = Albertos;
+			packageProductDependencies = (
+			);
+			productName = Albertos;
+			productReference = B366B22A2DAD0484007C72B6 /* Albertos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B366B2352DAD0486007C72B6 /* AlbertosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B366B24B2DAD0486007C72B6 /* Build configuration list for PBXNativeTarget "AlbertosTests" */;
+			buildPhases = (
+				B366B2322DAD0486007C72B6 /* Sources */,
+				B366B2332DAD0486007C72B6 /* Frameworks */,
+				B366B2342DAD0486007C72B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B366B2382DAD0486007C72B6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B366B2392DAD0486007C72B6 /* AlbertosTests */,
+			);
+			name = AlbertosTests;
+			packageProductDependencies = (
+			);
+			productName = AlbertosTests;
+			productReference = B366B2362DAD0486007C72B6 /* AlbertosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B366B23F2DAD0486007C72B6 /* AlbertosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B366B24E2DAD0486007C72B6 /* Build configuration list for PBXNativeTarget "AlbertosUITests" */;
+			buildPhases = (
+				B366B23C2DAD0486007C72B6 /* Sources */,
+				B366B23D2DAD0486007C72B6 /* Frameworks */,
+				B366B23E2DAD0486007C72B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B366B2422DAD0486007C72B6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B366B2432DAD0486007C72B6 /* AlbertosUITests */,
+			);
+			name = AlbertosUITests;
+			packageProductDependencies = (
+			);
+			productName = AlbertosUITests;
+			productReference = B366B2402DAD0486007C72B6 /* AlbertosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -134,6 +282,17 @@
 					B366B1E02DACD4D6007C72B6 = {
 						CreatedOnToolsVersion = 16.3;
 						TestTargetID = B366B1D32DACD4D4007C72B6;
+					};
+					B366B2292DAD0484007C72B6 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					B366B2352DAD0486007C72B6 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = B366B2292DAD0484007C72B6;
+					};
+					B366B23F2DAD0486007C72B6 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = B366B2292DAD0484007C72B6;
 					};
 				};
 			};
@@ -153,6 +312,9 @@
 			targets = (
 				B366B1D32DACD4D4007C72B6 /* TDD */,
 				B366B1E02DACD4D6007C72B6 /* TDDTests */,
+				B366B2292DAD0484007C72B6 /* Albertos */,
+				B366B2352DAD0486007C72B6 /* AlbertosTests */,
+				B366B23F2DAD0486007C72B6 /* AlbertosUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -166,6 +328,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B366B1DF2DACD4D6007C72B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B366B2282DAD0484007C72B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B366B2342DAD0486007C72B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B366B23E2DAD0486007C72B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,6 +372,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B366B2262DAD0484007C72B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B366B2322DAD0486007C72B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B366B23C2DAD0486007C72B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -196,6 +400,16 @@
 			isa = PBXTargetDependency;
 			target = B366B1D32DACD4D4007C72B6 /* TDD */;
 			targetProxy = B366B1E22DACD4D6007C72B6 /* PBXContainerItemProxy */;
+		};
+		B366B2382DAD0486007C72B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B366B2292DAD0484007C72B6 /* Albertos */;
+			targetProxy = B366B2372DAD0486007C72B6 /* PBXContainerItemProxy */;
+		};
+		B366B2422DAD0486007C72B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B366B2292DAD0484007C72B6 /* Albertos */;
+			targetProxy = B366B2412DAD0486007C72B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,6 +629,134 @@
 			};
 			name = Release;
 		};
+		B366B2492DAD0486007C72B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.Albertos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B366B24A2DAD0486007C72B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.Albertos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B366B24C2DAD0486007C72B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.AlbertosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Albertos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Albertos";
+			};
+			name = Debug;
+		};
+		B366B24D2DAD0486007C72B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.AlbertosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Albertos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Albertos";
+			};
+			name = Release;
+		};
+		B366B24F2DAD0486007C72B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.AlbertosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Albertos;
+			};
+			name = Debug;
+		};
+		B366B2502DAD0486007C72B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.AlbertosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Albertos;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -441,6 +783,33 @@
 			buildConfigurations = (
 				B366B1F92DACD4D6007C72B6 /* Debug */,
 				B366B1FA2DACD4D6007C72B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B366B2482DAD0486007C72B6 /* Build configuration list for PBXNativeTarget "Albertos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B366B2492DAD0486007C72B6 /* Debug */,
+				B366B24A2DAD0486007C72B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B366B24B2DAD0486007C72B6 /* Build configuration list for PBXNativeTarget "AlbertosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B366B24C2DAD0486007C72B6 /* Debug */,
+				B366B24D2DAD0486007C72B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B366B24E2DAD0486007C72B6 /* Build configuration list for PBXNativeTarget "AlbertosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B366B24F2DAD0486007C72B6 /* Debug */,
+				B366B2502DAD0486007C72B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
