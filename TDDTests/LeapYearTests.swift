@@ -9,7 +9,7 @@ import XCTest
 
 class LeapYear {
     func isLeap(_ year: Int) -> Bool {
-        return true
+        return year % 4 == 0
     }
 }
 
