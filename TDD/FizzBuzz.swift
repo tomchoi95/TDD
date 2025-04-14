@@ -15,3 +15,9 @@ func fizzBuzz(_ n: Int) -> String {
         case (true, true): "FizzBuzz"
     }
 }
+
+func asyncSum(a: Int, b: Int) async -> Int {
+    try? await Task.sleep(for: .seconds(1))
+    
+    return a + b
+}
