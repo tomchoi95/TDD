@@ -8,7 +8,7 @@
 import XCTest
 @testable import TDD
 
-final class TDDTests: XCTestCase {
+final class FizzBuzzAssertEqualTests: XCTestCase {
     
     func testFizzBuzzDivisibleBy3() {
         // given (준비)
