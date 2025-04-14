@@ -8,7 +8,11 @@
 import Foundation
 
 class AssertBool {
-    func assertTrue(_ condition: Bool) {
-        
+    func isGreaterThanFive(_ number: Int) -> Bool {
+        return number > 5
+    }
+    
+    func isLessThanTen(_ number: Int) -> Bool {
+        return number < 10
     }
 }
