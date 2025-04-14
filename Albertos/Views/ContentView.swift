@@ -24,5 +24,5 @@ struct MenuList: View {
 }
 
 #Preview {
-    MenuList()
+    MenuList(sections: groupMenuByCategory(.mockItems))
 }

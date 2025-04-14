@@ -17,7 +17,7 @@ final class AlbertosTests: XCTestCase {
     }
     
     // 하나의 카테고리에 속한 메뉴 항목들이 주어졌을 때, 하나의 섹션만 반환되는지 확인.
-    func testMenuWithOneCategoryReturnsOneSection() {
+    func testMenuWithOneCategoryReturnsOneSection() throws {
         let menu = [
             MenuItem(category: "pastas", name: "name"),
             MenuItem(category: "pastas", name: "other name")
