@@ -39,4 +39,8 @@ class LeapYearTests: XCTestCase {
     func testEvenlyDivisibleBy100IsNotLeap() {
         XCTAssertFalse(leapYear.isLeap(2100))
     }
+    
+    func testEvenlyDivisibleBy400IsLeap() {
+        XCTAssertTrue(leapYear.isLeap(2000))
+    }
 }
