@@ -57,4 +57,15 @@ final class TDDTests: XCTestCase {
         let expected = "2"
         XCTAssertEqual(result, expected)
     }
+    
+    func testAsyncSum() async {
+        let input1: Int = 1_000_000
+        let input2: Int = 2_000_000
+        
+        let result = await asyncSum(a: input1, b: input2)
+        
+        let expected: Int = 3_000_000
+        
+        XCTAssertEqual(result, expected)
+    }
 }
