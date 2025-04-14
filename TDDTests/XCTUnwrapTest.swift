@@ -7,13 +7,13 @@
 
 import XCTest
 
-struct User {
+fileprivate struct User {
     let id: UUID
     let name: String
     let email: String
 }
 
-class UserRepository {
+fileprivate class UserRepository {
     var users: [User] = [
         User(id: UUID(), name: "a", email: "a@a"),
         User(id: UUID(), name: "b", email: "b@b"),
@@ -30,7 +30,7 @@ class UserRepository {
 
 class XCTUnwrapTest: XCTestCase {
     
-    var userRepository: UserRepository!
+    fileprivate var userRepository: UserRepository!
     
     override func setUp() {
         super.setUp()
