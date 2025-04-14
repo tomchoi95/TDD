@@ -38,7 +38,7 @@ class AssortedAssertionTest: XCTestCase {
     // 실패 해 보기.
     func testGreaterThan() {
         // Arrange
-        let input: Int = 1
+        let input: Int = 3
         let upperBount: Int = 2
         
         // Act && Assert
@@ -53,7 +53,7 @@ class AssortedAssertionTest: XCTestCase {
     }
     
     func testGreaterThanOrEqualTo() {
-        let input = 1
+        let input = 4
         let upperBound = 2
         
         XCTAssertGreaterThanOrEqual(input, upperBound, "\(input) should be greater than or equal to \(upperBound)")

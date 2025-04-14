@@ -8,10 +8,20 @@
 import XCTest
 @testable import TDD
 
+fileprivate class AssertBool {
+    func isGreaterThanFive(_ number: Int) -> Bool {
+        return number > 5
+    }
+    
+    func isLessThanTen(_ number: Int) -> Bool {
+        return number < 10
+    }
+}
+
 final class AssertBoolTest: XCTestCase {
     
     // 테스트 대상 클래스의 인스턴스 변수를 선언.
-    var assertBool: AssertBool!
+    fileprivate var assertBool: AssertBool!
     
     // 테스트 대상 객체 초기화.
     override func setUp() {
