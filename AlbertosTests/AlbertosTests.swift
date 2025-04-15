@@ -44,4 +44,8 @@ final class AlbertosTests: XCTestCase {
         XCTAssertEqual(sections[safe: 1]?.category, "drinks")
         XCTAssertEqual(sections[safe: 2]?.category, "desserts")
     }
+    
+    func testWhenItemIsNotSpicyTextIsItemNameOnly() {}
+    
+    func testWhenItemIsSpicyTextIsItemNameWithChiliEmoji() {}
 }
