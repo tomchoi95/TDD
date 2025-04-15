@@ -9,13 +9,13 @@ import SwiftUI
 import Combine
 
 struct MenuList: View {
-    let viewModel: ViewModel
+    @StateObject var viewModel: ViewModel
     
     var body: some View {
         List(viewModel.sections, id: \.category) { section in
             Section {
                 ForEach(section.items, id: \.name) { item in
-                    MenuRow(viewModel: .init(item: item))
+                    MenuRow(item: item)
                 }
             } header: {
                 Text(section.category)
@@ -25,19 +25,13 @@ struct MenuList: View {
 }
 
 struct MenuRow: View {
-    let viewModel: ViewModel
+    let item: MenuItem
 
     var body: some View {
-        Text(viewModel.text)
-    }
-}
-
-extension MenuRow {
-    struct ViewModel {
-        let text: String
-        
-        init(item: MenuItem) {
-            text = item.spicy ? "🌶️ \(item.name)" : item.name
+        HStack {
+            Text(item.spicy ? "🌶️ \(item.name)" : item.name)
+            Spacer()
+            Text("$\(item.price, specifier: "%.2f")")
         }
     }
 }
