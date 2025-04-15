@@ -23,6 +23,14 @@ struct MenuList: View {
     }
 }
 
+struct MenuRow: View {
+    let viewModel: ViewModel
+
+    var body: some View {
+        Text(viewModel.text)
+    }
+}
+
 #Preview {
     MenuList(sections: groupMenuByCategory(.mockItems))
 }
