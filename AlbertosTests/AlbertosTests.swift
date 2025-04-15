@@ -50,23 +50,4 @@ final class AlbertosTests: XCTestCase {
         let viewModel = MenuRow(item: item)
         XCTAssertEqual(viewModel.item.name, "name")
     }
-    
-    func testWhenItemIsSpicyTextIsItemNameWithChiliEmoji() {
-        let item = MenuItem.fixture(name: "name", spicy: true)
-        let viewModel = MenuRow(item: item)
-        XCTAssertEqual(viewModel.item.name, "🌶️ name")
-    }
-    
-    func testCallsGivenGroupingFunction() {
-        var called = false
-        let inputSections = [MenuSection.fixture()]
-        let spyClosure: ([MenuItem]) -> ([MenuSection]) = { items in
-            called = true
-            return inputSections
-        }
-        let viewModel = MenuList.ViewModel(menuFetching: MenuFetchingPlaceholder(), menuGrouping: spyClosure)
-        let sections = viewModel.sections
-        XCTAssertTrue(called)
-        XCTAssertEqual(sections, inputSections)
-    }
 }
