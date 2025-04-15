@@ -56,4 +56,8 @@ final class AlbertosTests: XCTestCase {
         let viewModel = MenuRow.ViewModel(item: item)
         XCTAssertEqual(viewModel.text, "🌶️ name")
     }
+    
+    func testCallsGivenGroupingFunction() {
+        
+    }
 }
