@@ -13,7 +13,7 @@ struct MenuList: View {
     var body: some View {
         List(sections) { section in
             Section {
-                ForEach(section.items) { item in
+                ForEach(section.items, id: \.name) { item in
                     Text(item.name)
                 }
             } header: {
