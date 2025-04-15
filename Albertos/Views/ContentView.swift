@@ -14,7 +14,7 @@ struct MenuList: View {
         List(sections) { section in
             Section {
                 ForEach(section.items, id: \.name) { item in
-                    Text(item.name)
+                    MenuRow(viewModel: .init(item: item))
                 }
             } header: {
                 Text(section.category)
