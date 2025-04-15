@@ -34,7 +34,7 @@ final class MenuListViewModelTests: XCTestCase {
         ]
         let menuFetching = MenuFetchingStub(result: .success(menu))
         let expectation = XCTestExpectation(description: "Publishes sections")
-        let viewModel = MenuList.ViewModel(menuFetching: menuFetching)
+        let viewModel = MenuListViewModel(menuFetching: menuFetching)
         
         viewModel.$sections
             .dropFirst()

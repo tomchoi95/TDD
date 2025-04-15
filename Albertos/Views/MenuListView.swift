@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 
 struct MenuList: View {
-    @StateObject var viewModel: ViewModel
+    @StateObject var viewModel: MenuListViewModel
     
     var body: some View {
         List(viewModel.sections, id: \.category) { section in
@@ -26,7 +26,7 @@ struct MenuList: View {
 
 struct MenuRow: View {
     let item: MenuItem
-
+    
     var body: some View {
         HStack {
             Text(item.spicy ? "🌶️ \(item.name)" : item.name)
@@ -36,24 +36,30 @@ struct MenuRow: View {
     }
 }
 
-extension MenuList {
-    class ViewModel: ObservableObject {
-        @Published private(set) var sections: [MenuSection] = []
-        private var cancellables = Set<AnyCancellable>()
-        
-        init(
-            menuFetching: MenuFetching,
-            menuGrouping: @escaping ([MenuItem]) -> [MenuSection] = groupMenuByCategory
-        ) {
-            menuFetching.fetchMenu()
-                .receive(on: RunLoop.main)
-                .sink(receiveCompletion: { _ in }) { [weak self] items in
-                    self?.sections = menuGrouping(items)
+
+class MenuListViewModel: ObservableObject {
+    @Published private(set) var sections: Result<[MenuSection], Error> = .success([])
+    
+    private var cancellables = Set<AnyCancellable>()
+    
+    init(
+        menuFetching: MenuFetching,
+        menuGrouping: @escaping ([MenuItem]) -> [MenuSection] = groupMenuByCategory
+    ) {
+        menuFetching.fetchMenu()
+            .map(menuGrouping)
+            .sink { [weak self] completion in
+                if case .failure(let error) = completion {
+                    self?.sections = .failure(error)
                 }
-                .store(in: &cancellables)
-        }
+            } receiveValue: { [weak self] menuSection in
+                self?.sections = .success(menuSection)
+            }
+            .store(in: &cancellables)
+
     }
 }
+
 
 #Preview {
     MenuList(viewModel: .init(menuFetching: MenuFetchingPlaceholder()))
