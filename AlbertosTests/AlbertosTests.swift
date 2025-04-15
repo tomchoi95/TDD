@@ -45,7 +45,15 @@ final class AlbertosTests: XCTestCase {
         XCTAssertEqual(sections[safe: 2]?.category, "desserts")
     }
     
-    func testWhenItemIsNotSpicyTextIsItemNameOnly() {}
+    func testWhenItemIsNotSpicyTextIsItemNameOnly() {
+        let item = MenuItem.fixture(name: "name", spicy: false)
+        let viewModel = MenuRow.ViewModel(item: item)
+        XCTAssertEqual(viewModel.text, "name")
+    }
     
-    func testWhenItemIsSpicyTextIsItemNameWithChiliEmoji() {}
+    func testWhenItemIsSpicyTextIsItemNameWithChiliEmoji() {
+        let item = MenuItem.fixture(name: "name", spicy: true)
+        let viewModel = MenuRow.ViewModel(item: item)
+        XCTAssertEqual(viewModel.text, "🌶️ name")
+    }
 }
