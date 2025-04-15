@@ -7,9 +7,15 @@
 
 import Foundation
 
-struct MenuSection: Identifiable {
+struct MenuSection: Identifiable, Equatable {
     let category: String
     let items: [MenuItem]
     
     var id: String { category }
+}
+
+extension MenuSection {
+    static func fixture(category: String = "Test") -> MenuSection {
+        MenuSection(category: category, items: [MenuItem.fixture()])
+    }
 }

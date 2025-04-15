@@ -37,9 +37,3 @@ func groupMenuByCategory(_ menu: [MenuItem]) -> [MenuSection] {
         .map { MenuSection(category: $0.key, items: $0.value) }
         .sorted { $0.category > $1.category }
 }
-
-extension MenuItem {
-    static func fixture(category: String = "category", name: String = "name", spicy: Bool = false, price: Double = 0.0) -> MenuItem {
-        MenuItem(name: name, category: category, spicy: spicy, price: price)
-    }
-}
