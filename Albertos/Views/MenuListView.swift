@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MenuListView.swift
 //  Albertos
 //
 //  Created by 최범수 on 2025-04-14.
@@ -12,7 +12,7 @@ struct MenuList: View {
     @StateObject var viewModel: MenuListViewModel
     
     init(viewModel: MenuListViewModel = MenuListViewModel(menuFetching: MenuFetchingPlaceholder())) {
-        _viewModel = @StateObject(wrappedValue: viewModel)
+        _viewModel = StateObject(wrappedValue: viewModel)
     }
     
     var body: some View {
