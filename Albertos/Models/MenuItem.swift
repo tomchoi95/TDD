@@ -26,11 +26,12 @@ struct MenuItem: Identifiable {
 */
 
 // 다시 아래와 같이 모델 수정.
-struct MenuItem: Equatable {
+struct MenuItem: Equatable, Identifiable {
     let name: String
     let category: String
     let spicy: Bool
     let price: Double
+    var id: String { name }
 }
 
 extension MenuItem {

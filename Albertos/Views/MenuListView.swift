@@ -11,15 +11,28 @@ import Combine
 struct MenuList: View {
     @StateObject var viewModel: MenuListViewModel
     
+    init(viewModel: MenuListViewModel = MenuListViewModel(menuFetching: MenuFetchingPlaceholder())) {
+        _viewModel = @StateObject(wrappedValue: viewModel)
+    }
+    
     var body: some View {
-        List(viewModel.sections, id: \.category) { section in
-            Section {
-                ForEach(section.items, id: \.name) { item in
-                    MenuRow(item: item)
+        switch viewModel.sections {
+            case .success(let sections):
+                List(sections) { section in
+                    Section {
+                        ForEach(section.items) { item in
+                            MenuRow(item: item)
+                        }
+                    } header: {
+                        Text(section.category)
+                    }
                 }
-            } header: {
-                Text(section.category)
-            }
+            case .failure(let error):
+                VStack {
+                    Text("An error occoured:")
+                    Text(error.localizedDescription)
+                        .italic()
+                }
         }
     }
 }
