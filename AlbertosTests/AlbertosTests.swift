@@ -47,14 +47,14 @@ final class AlbertosTests: XCTestCase {
     
     func testWhenItemIsNotSpicyTextIsItemNameOnly() {
         let item = MenuItem.fixture(name: "name", spicy: false)
-        let viewModel = MenuRow.ViewModel(item: item)
-        XCTAssertEqual(viewModel.text, "name")
+        let viewModel = MenuRow(item: item)
+        XCTAssertEqual(viewModel.item.name, "name")
     }
     
     func testWhenItemIsSpicyTextIsItemNameWithChiliEmoji() {
         let item = MenuItem.fixture(name: "name", spicy: true)
-        let viewModel = MenuRow.ViewModel(item: item)
-        XCTAssertEqual(viewModel.text, "🌶️ name")
+        let viewModel = MenuRow(item: item)
+        XCTAssertEqual(viewModel.item.name, "🌶️ name")
     }
     
     func testCallsGivenGroupingFunction() {
@@ -64,7 +64,7 @@ final class AlbertosTests: XCTestCase {
             called = true
             return inputSections
         }
-        let viewModel = MenuList.ViewModel(menu: [.fixture()], menuGrouping: spyClosure)
+        let viewModel = MenuList.ViewModel(menuFetching: MenuFetchingPlaceholder(), menuGrouping: spyClosure)
         let sections = viewModel.sections
         XCTAssertTrue(called)
         XCTAssertEqual(sections, inputSections)
