@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct MenuList: View {
-    let sections: [MenuSection]
+    let viewModel: ViewModel
     
     var body: some View {
-        List(sections) { section in
+        List(viewModel.sections, id: \.category) { section in
             Section {
                 ForEach(section.items, id: \.name) { item in
                     MenuRow(viewModel: .init(item: item))
@@ -54,5 +54,5 @@ extension MenuList {
 }
 
 #Preview {
-    MenuList(sections: groupMenuByCategory(.mockItems))
+    MenuList(viewModel: .init(menu: .mockItems))
 }

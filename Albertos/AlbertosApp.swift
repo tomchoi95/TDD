@@ -12,8 +12,8 @@ struct AlbertosApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                MenuList(sections: groupMenuByCategory(.mockItems))
-                    .navigationTitle("Alberto's")
+                MenuList(viewModel: .init(menu: .mockItems))
+                    .navigationTitle("Alberto's Italian Restaurant")
             }
         }
     }
