@@ -13,10 +13,13 @@ protocol MenuFetching {
 }
 
 class MenuFetchingPlaceholder: MenuFetching {
-    func fetchMenu() -> AnyPublisher<[MenuItem], any Error> {
-        return Future { promise in
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { promise(.success(.mockItems)) }
-            
-        }.eraseToAnyPublisher()
+    func fetchMenu() -> AnyPublisher<[MenuItem], Error> {
+        Future { promise in
+            Task {
+                try await Task.sleep(nanoseconds: 1_000_000)
+                promise(.success(.mockItems))
+            }
+        }
+        .eraseToAnyPublisher()
     }
 }
