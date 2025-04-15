@@ -31,6 +31,16 @@ struct MenuRow: View {
     }
 }
 
+extension MenuRow {
+    struct ViewModel {
+        let text: String
+        
+        init(item: MenuItem) {
+            text = item.spicy ? "🌶️ \(item.name)" : item.name
+        }
+    }
+}
+
 #Preview {
     MenuList(sections: groupMenuByCategory(.mockItems))
 }
