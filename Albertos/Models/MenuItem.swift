@@ -17,9 +17,18 @@ struct MenuItem: Identifiable {
  */
 
 /* 아래와 같은 모델로 변경을 할 것임. */
+/*
+ struct MenuItem {
+ let name: String
+ let category: String
+ let spicy: Bool
+ }
+*/
+
+// 다시 아래와 같이 모델 수정.
 struct MenuItem {
     let name: String
     let category: String
     let spicy: Bool
+    let price: Double
 }
- 

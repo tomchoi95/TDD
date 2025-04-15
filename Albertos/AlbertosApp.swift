@@ -39,7 +39,7 @@ func groupMenuByCategory(_ menu: [MenuItem]) -> [MenuSection] {
 }
 
 extension MenuItem {
-    static func fixture(category: String = "category", name: String = "name", spicy: Bool = false) -> MenuItem {
-        MenuItem(name: name, category: category, spicy: spicy)
+    static func fixture(category: String = "category", name: String = "name", spicy: Bool = false, price: Double = 0.0) -> MenuItem {
+        MenuItem(name: name, category: category, spicy: spicy, price: price)
     }
 }
