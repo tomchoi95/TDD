@@ -32,6 +32,11 @@ struct MenuList: View {
                     Text("An error occoured:")
                     Text(error.localizedDescription)
                         .italic()
+                    Button("retry", action: viewModel.retry)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundStyle(.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
                 }
         }
     }
@@ -54,13 +59,22 @@ class MenuListViewModel: ObservableObject {
     @Published private(set) var sections: Result<[MenuSection], Error> = .success([])
     
     private var cancellables = Set<AnyCancellable>()
+    private let menuFetching: MenuFetching
+    private let menuGrouping: ([MenuItem]) -> [MenuSection]
     
     init(
         menuFetching: MenuFetching,
         menuGrouping: @escaping ([MenuItem]) -> [MenuSection] = groupMenuByCategory
     ) {
+        self.menuFetching = menuFetching
+        self.menuGrouping = menuGrouping
+        fetchMenu()
+    }
+    
+    func fetchMenu() {
         menuFetching.fetchMenu()
             .map(menuGrouping)
+            .receive(on: RunLoop.main)
             .sink { [weak self] completion in
                 if case .failure(let error) = completion {
                     self?.sections = .failure(error)
@@ -69,7 +83,10 @@ class MenuListViewModel: ObservableObject {
                 self?.sections = .success(menuSection)
             }
             .store(in: &cancellables)
-
+    }
+    
+    func retry() {
+        fetchMenu()
     }
 }
 
