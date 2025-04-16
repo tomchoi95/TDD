@@ -26,20 +26,20 @@ final class MenuListViewModelTests: XCTestCase {
     func testWhenFetchingSucceedsPublishesSectionsBuiltFromReceivedMenu() {
         let expectedSections = [
             MenuSection(category: "starters", items: [
-                MenuItem(name: "Caprese Salad", category: "starters", spicy: false, price: 9.99),
-                MenuItem(name: "Arancini Balls", category: "starters", spicy: false, price: 8.49)
+                MenuItem(category: "starters", name: "Caprese Salad", spicy: false, price: 9.99),
+                MenuItem(category: "starters", name: "Arancini Balls", spicy: false, price: 8.49)
             ]),
             MenuSection(category: "pastas", items: [
-                MenuItem(name: "Penne all'Arrabbiata", category: "pastas", spicy: true, price: 11.99),
-                MenuItem(name: "Spaghetti Carbonara", category: "pastas", spicy: false, price: 12.49)
+                MenuItem(category: "pastas", name: "Penne all'Arrabbiata", spicy: true, price: 11.99),
+                MenuItem(category: "pastas", name: "Spaghetti Carbonara", spicy: false, price: 12.49)
             ]),
             MenuSection(category: "drinks", items: [
-                MenuItem(name: "Water", category: "drinks", spicy: false, price: 1.99),
-                MenuItem(name: "Red Wine", category: "drinks", spicy: false, price: 4.99)
+                MenuItem(category: "drinks", name: "Water", spicy: false, price: 1.99),
+                MenuItem(category: "drinks", name: "Red Wine", spicy: false, price: 4.99)
             ]),
             MenuSection(category: "desserts", items: [
-                MenuItem(name: "Tiramisù", category: "desserts", spicy: false, price: 5.99),
-                MenuItem(name: "Crema Catalana", category: "desserts", spicy: false, price: 5.49)
+                MenuItem(category: "desserts", name: "Tiramisù", spicy: false, price: 5.99),
+                MenuItem(category: "desserts", name: "Crema Catalana", spicy: false, price: 5.49)
             ])
         ]
         let menuFetching = MenuFetchingStub(result: .success(menu))

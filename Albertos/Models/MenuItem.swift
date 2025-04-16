@@ -28,16 +28,43 @@ struct MenuItem: Identifiable {
 // 다시 아래와 같이 모델 수정.
 struct MenuItem {
     let name: String
-    let category: String
     let spicy: Bool
     let price: Double
     var id: String { name }
+    private let categoryObject: Category
+    var category: String { categoryObject.name }
+    
+    enum CodingKeys: String, CodingKey {
+        case name, spicy, price
+        case categoryObject = "category"
+    }
+    
+    struct Category: Codable, Equatable {
+        let name: String
+    }
+}
+extension MenuItem: Decodable {
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.name = try container.decode(String.self, forKey: .name)
+        self.spicy = try container.decode(Bool.self, forKey: .spicy)
+        self.price = try container.decode(Double.self, forKey: .price)
+        self.categoryObject = try container.decode(Category.self, forKey: .categoryObject)
+    }
 }
 
-extension MenuItem: Equatable, Identifiable, Codable {}
+extension MenuItem {
+    init(category: String, name: String, spicy: Bool, price: Double) {
+        self.categoryObject = .init(name: category)
+        self.name = name
+        self.spicy = spicy
+        self.price = price
+    }
+}
+extension MenuItem: Equatable, Identifiable {}
 
 extension MenuItem {
     static func fixture(category: String = "category", name: String = "name", spicy: Bool = false, price: Double = 0.0) -> MenuItem {
-        MenuItem(name: name, category: category, spicy: spicy, price: price)
+        MenuItem(category: category, name: name, spicy: spicy, price: price)
     }
 }
