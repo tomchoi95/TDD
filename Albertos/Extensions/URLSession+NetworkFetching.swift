@@ -14,5 +14,4 @@ extension URLSession: NetworkFetching {
             .map { $0.data }
             .eraseToAnyPublisher()
     }
-    
 }
