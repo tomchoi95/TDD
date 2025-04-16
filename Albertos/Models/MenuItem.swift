@@ -26,13 +26,15 @@ struct MenuItem: Identifiable {
 */
 
 // 다시 아래와 같이 모델 수정.
-struct MenuItem: Equatable, Identifiable {
+struct MenuItem {
     let name: String
     let category: String
     let spicy: Bool
     let price: Double
     var id: String { name }
 }
+
+extension MenuItem: Equatable, Identifiable, Codable {}
 
 extension MenuItem {
     static func fixture(category: String = "category", name: String = "name", spicy: Bool = false, price: Double = 0.0) -> MenuItem {

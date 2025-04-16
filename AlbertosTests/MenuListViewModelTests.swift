@@ -109,6 +109,24 @@ final class MenuListViewModelTests: XCTestCase {
         
         wait(for: [expectation], timeout: 1)
     }
+    
+    func testRetryFetchesMenuAgain() {
+        let expectation = XCTestExpectation(description: "Fetches menu twice, fails then succeeds")
+        expectation.expectedFulfillmentCount = 2
+        
+        var fetchCount = 0
+        let stubbedMenu = [MenuItem.fixture()]
+//
+//        let menuFetchingStub = MenuFetchingStub { () -> ANyPublisher<[MenuItem], Error> in
+//            fetchCount += 1
+//            expectation.fulfill()
+//            return Just(stubbedMenu)
+//                .setFailureType(to: Error.self)
+//                .eraseToAnyPublisher()
+//        }
+        
+    }
+    
 }
 
 class MenuFetchingStub: MenuFetching {
