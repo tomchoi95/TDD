@@ -27,8 +27,18 @@ class MenuFetcherTests: XCTestCase {
         let json =
             """
              [
-                { "name": "a name", "category": "a category", "spicy": true },
-                { "name": "another name", "category": "a category", "spicy": true }
+                 { 
+                     "name": "a name", 
+                     "spicy": true, 
+                     "price": 12, 
+                     "category": { "name": "a category" }
+                 },
+                 { 
+                     "name": "another name", 
+                     "spicy": true, 
+                     "price": 12, 
+                     "category": { "name": "a category" }
+                 }
              ] 
             """
         let data = try XCTUnwrap(json.data(using: .utf8))
@@ -42,12 +52,12 @@ class MenuFetcherTests: XCTestCase {
                 
             } receiveValue: { items in
                 XCTAssertEqual(items.count, 2)
-                XCTAssertEqual(items.first?.name, "name")
+                XCTAssertEqual(items.first?.name, "a name")
                 XCTAssertEqual(items.last?.name, "another name")
                 expectation.fulfill()
             }
             .store(in: &cancellables)
         
-        wait(for: [expectation], timeout: 1)
+        wait(for: [expectation], timeout: 2)
     }
 }
