@@ -39,6 +39,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B3412FA62DAF7B8F00C93B5B /* Exceptions for "Albertos" folder in "AlbertosTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				menu_item.json,
+			);
+			target = B366B2352DAD0486007C72B6 /* AlbertosTests */;
+		};
 		B366B2512DAD0500007C72B6 /* Exceptions for "Albertos" folder in "TDD" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -49,6 +56,7 @@
 		B366B2522DAD0500007C72B6 /* Exceptions for "Albertos" folder in "Albertos" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				menu_item.json,
 				Requirement,
 			);
 			target = B366B2292DAD0484007C72B6 /* Albertos */;
@@ -71,6 +79,7 @@
 			exceptions = (
 				B366B2512DAD0500007C72B6 /* Exceptions for "Albertos" folder in "TDD" target */,
 				B366B2522DAD0500007C72B6 /* Exceptions for "Albertos" folder in "Albertos" target */,
+				B3412FA62DAF7B8F00C93B5B /* Exceptions for "Albertos" folder in "AlbertosTests" target */,
 			);
 			path = Albertos;
 			sourceTree = "<group>";
