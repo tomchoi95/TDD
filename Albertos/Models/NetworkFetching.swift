@@ -9,5 +9,5 @@ import Foundation
 import Combine
 
 protocol NetworkFetching {
-    func load(_ request: URLRequest) -> AnyPublisher<Data, Error>
+    func load(_ request: URLRequest) -> AnyPublisher<Data, URLError>
 }
