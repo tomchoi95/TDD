@@ -60,4 +60,24 @@ class MenuFetcherTests: XCTestCase {
         
         wait(for: [expectation], timeout: 2)
     }
+    
+    func testWhenRequestFailsPublishesReceivedError() {
+        let expected = URLError(.badServerResponse)
+        let stub = NetworkFetchingStub(returning: .failure(expected))
+        let menuFetcher = MenuFecther(networkFetching: stub)
+        
+        let expectation = XCTestExpectation(description: "Publishes received URLError")
+        
+        menuFetcher.fetchMenu()
+            .sink { completion in
+                guard case .failure(let error) = completion else { return }
+                XCTAssertEqual(error as? URLError, expected)
+                expectation.fulfill()
+            } receiveValue: { items in
+                XCTFail("Expected to fail, succeeded with\(items)")
+            }
+            .store(in: &cancellables)
+        
+        wait(for: [expectation], timeout: 1)
+    }
 }
