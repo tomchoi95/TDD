@@ -30,7 +30,7 @@ class MenuFecther: MenuFetching {
 class MenuFecther: MenuFetching {
     let networkFetching: NetworkFetching
     
-    init(networkFetching: NetworkFetching) {
+    init(networkFetching: NetworkFetching = URLSession.shared) {
         self.networkFetching = networkFetching
     }
     
