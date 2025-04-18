@@ -6,9 +6,19 @@
 //
 
 import SwiftUI
+import HippoAnalytics
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        let analytics = HippoAnalytics.shared
+        analytics.configure(apiKey: "YOUR_API_KEY")
+        return true
+    }
+}
 
 @main
 struct AlbertosApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject private var orderController = OrderController()
     
     var body: some Scene {
