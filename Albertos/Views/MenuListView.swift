@@ -9,36 +9,48 @@ import SwiftUI
 import Combine
 
 struct MenuList: View {
-    @StateObject var viewModel: MenuListViewModel
-    
-    init(viewModel: MenuListViewModel = MenuListViewModel(menuFetching: MenuFetchingPlaceholder())) {
-        _viewModel = StateObject(wrappedValue: viewModel)
-    }
+    @ObservedObject var viewModel: MenuListViewModel
+    @EnvironmentObject var orderController: OrderController
     
     var body: some View {
-        switch viewModel.sections {
+        Group {
+            switch viewModel.sections {
             case .success(let sections):
-                List(sections) { section in
-                    Section {
-                        ForEach(section.items) { item in
-                            MenuRow(item: item)
+                List {
+                    ForEach(sections) { section in
+                        Section(header: Text(section.category)) {
+                            ForEach(section.items) { item in
+                                NavigationLink(destination: destination(for: item)) {
+                                    MenuRow(item: item)
+                                }
+                            }
                         }
-                    } header: {
-                        Text(section.category)
                     }
                 }
             case .failure(let error):
                 VStack {
-                    Text("An error occoured:")
+                    Text("메뉴를 불러오는데 실패했습니다")
+                        .font(.headline)
                     Text(error.localizedDescription)
-                        .italic()
-                    Button("retry", action: viewModel.retry)
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundStyle(.white)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .font(.subheadline)
+                        .foregroundColor(.red)
+                    Button("다시 시도") {
+                        viewModel.retry()
+                    }
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
                 }
+            }
         }
+        .onAppear {
+            viewModel.loadMenu()
+        }
+    }
+    
+    private func destination(for item: MenuItem) -> some View {
+        MenuItemDetail(viewModel: .init(item: item, orderController: orderController))
     }
 }
 
@@ -53,7 +65,6 @@ struct MenuRow: View {
         }
     }
 }
-
 
 class MenuListViewModel: ObservableObject {
     @Published private(set) var sections: Result<[MenuSection], Error> = .success([])
@@ -88,8 +99,11 @@ class MenuListViewModel: ObservableObject {
     func retry() {
         fetchMenu()
     }
+    
+    func loadMenu() {
+        fetchMenu()
+    }
 }
-
 
 #Preview {
     MenuList(viewModel: .init(menuFetching: MenuFetchingPlaceholder()))

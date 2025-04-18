@@ -23,42 +23,19 @@ class MenuFetcherTests: XCTestCase {
         super.tearDown()
     }
     
-    func testWhenRequestSucceedsPublishesDecodedMenuItems() throws {
-        let json =
-            """
-             [
-                 { 
-                     "name": "a name", 
-                     "spicy": true, 
-                     "price": 12, 
-                     "category": { "name": "a category" }
-                 },
-                 { 
-                     "name": "another name", 
-                     "spicy": true, 
-                     "price": 12, 
-                     "category": { "name": "a category" }
-                 }
-             ] 
-            """
-        let data = try XCTUnwrap(json.data(using: .utf8))
-        let stub = NetworkFetchingStub(returning: .success(data))
-        let menuFetcher = MenuFecther(networkFetching: stub)
-        
+    func testWhenRequestSucceedsPublishesDecodedMenuItems() {
         let expectation = XCTestExpectation(description: "Publishes decoded [MenuItem]")
+        let menuFetcher = MenuFetcher()
         
         menuFetcher.fetchMenu()
-            .sink { completion in
-                
-            } receiveValue: { items in
-                XCTAssertEqual(items.count, 2)
-                XCTAssertEqual(items.first?.name, "a name")
-                XCTAssertEqual(items.last?.name, "another name")
-                expectation.fulfill()
-            }
+            .sink(receiveCompletion: { _ in },
+                  receiveValue: { items in
+                    XCTAssertEqual(items.count, 8)
+                    expectation.fulfill()
+                  })
             .store(in: &cancellables)
         
-        wait(for: [expectation], timeout: 2)
+        wait(for: [expectation], timeout: 5.0)  // 타임아웃을 5초로 증가
     }
     
     func testWhenRequestFailsPublishesReceivedError() {

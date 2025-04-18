@@ -14,29 +14,41 @@ final class MenuItemTests: XCTestCase {
         let json = """
             {
                 "name": "a name",
-                "category": {
-                    "name": "a category",
-                    "id": 123
-                },
-                "spicy": false,
-                "price": 100
+                "category": "a category",
+                "spicy": true,
+                "price": 1.0,
+                "description": "a description"
             }
-            """
-        let data = try XCTUnwrap(json.data(using: .utf8))
-        let item = try JSONDecoder().decode(MenuItem.self, from: data)
+            """.data(using: .utf8)!
+        
+        let item = try JSONDecoder().decode(MenuItem.self, from: json)
+        
         XCTAssertEqual(item.name, "a name")
         XCTAssertEqual(item.category, "a category")
-        XCTAssertEqual(item.spicy, false)
+        XCTAssertEqual(item.spicy, true)
+        XCTAssertEqual(item.price, 1.0)
+        XCTAssertEqual(item.description, "a description")
     }
     
     func testDecodesFromJSONData() throws {
-        let data = try dataFromJSONFileNamed("menu_item")
-        let item = try JSONDecoder().decode(MenuItem.self, from: data)
+        let json = """
+            {
+                "name": "a name",
+                "category": "a category",
+                "spicy": true,
+                "price": 1.0,
+                "description": "a description"
+            }
+            """.data(using: .utf8)!
+        
+        let item = try JSONDecoder().decode(MenuItem.self, from: json)
+        
         XCTAssertEqual(item.name, "a name")
         XCTAssertEqual(item.category, "a category")
-        XCTAssertEqual(item.spicy, false)
+        XCTAssertEqual(item.spicy, true)
+        XCTAssertEqual(item.price, 1.0)
+        XCTAssertEqual(item.description, "a description")
     }
-    
     
 }
 

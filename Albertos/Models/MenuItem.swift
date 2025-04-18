@@ -30,12 +30,13 @@ struct MenuItem {
     let name: String
     let spicy: Bool
     let price: Double
+    let description: String
     var id: String { name }
     private let categoryObject: Category
     var category: String { categoryObject.name }
     
     enum CodingKeys: String, CodingKey {
-        case name, spicy, price
+        case name, spicy, price, description
         case categoryObject = "category"
     }
     
@@ -43,28 +44,38 @@ struct MenuItem {
         let name: String
     }
 }
+
 extension MenuItem: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try container.decode(String.self, forKey: .name)
         self.spicy = try container.decode(Bool.self, forKey: .spicy)
         self.price = try container.decode(Double.self, forKey: .price)
+        self.description = try container.decode(String.self, forKey: .description)
         self.categoryObject = try container.decode(Category.self, forKey: .categoryObject)
     }
 }
 
 extension MenuItem {
-    init(category: String, name: String, spicy: Bool, price: Double) {
+    init(category: String, name: String, spicy: Bool, price: Double, description: String = "") {
         self.categoryObject = .init(name: category)
         self.name = name
         self.spicy = spicy
         self.price = price
+        self.description = description
     }
 }
+
 extension MenuItem: Equatable, Identifiable {}
 
 extension MenuItem {
-    static func fixture(category: String = "category", name: String = "name", spicy: Bool = false, price: Double = 0.0) -> MenuItem {
-        MenuItem(category: category, name: name, spicy: spicy, price: price)
+    static func fixture(
+        category: String = "category", 
+        name: String = "name", 
+        spicy: Bool = false, 
+        price: Double = 0.0,
+        description: String = ""
+    ) -> MenuItem {
+        MenuItem(category: category, name: name, spicy: spicy, price: price, description: description)
     }
 }

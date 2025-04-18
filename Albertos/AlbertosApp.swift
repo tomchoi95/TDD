@@ -9,11 +9,14 @@ import SwiftUI
 
 @main
 struct AlbertosApp: App {
+    @StateObject private var orderController = OrderController()
+    
     var body: some Scene {
         WindowGroup {
             NavigationStack {
                 MenuList(viewModel: .init(menuFetching: MenuFetchingPlaceholder()))
                     .navigationTitle("Alberto's Italian Restaurant")
+                    .environmentObject(orderController)
             }
         }
     }
