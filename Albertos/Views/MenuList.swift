@@ -10,18 +10,15 @@ import Combine
 
 extension MenuList {
     class ViewModel: ObservableObject {
-        @Published private(set) var sections: [MenuSection]
-        private var cancellables = Set<AnyCancellable>()
+        @Published private(set) var sections: Result<[MenuSection], Error> = .success([])
         
         init(menuFetching: MenuFetching, menuGrouping: @escaping ([MenuItem]) -> ([MenuSection]) = groupMenuByCategory) {
-            self.sections = menuGrouping(menu)
-            
             menuFetching.fetchMenu()
                 .receive(on: RunLoop.main)
-                .sink(receiveCompletion: { _ in }) { [weak self] items in
-                    self?.sections = menuGrouping(items)
-                }
-                .store(in: &cancellables)
+                .map(menuGrouping)
+                .map { Result<[MenuSection], Error>.success($0) }
+                .catch { Just(Result<[MenuSection], Error>.failure($0)) }
+                .assign(to: &$sections)
         }
     }
 }
@@ -30,14 +27,23 @@ struct MenuList: View {
     @StateObject var viewModel: ViewModel
     
     var body: some View {
-        //Initializer 'init(_:rowContent:)' requires that 'MenuSection' conform to 'Identifiable' -> 메뉴 섹션 Identifiable 만족하러 가자.
-        List(viewModel.sections) { section in
-            Section {
-                ForEach(section.items) { MenuRow(viewModel: .init(item: $0)) }
-            } header: {
-                Text(section.category)
-            }
+        switch viewModel.sections {
+            case .success(let sections):
+                List(sections) { section in
+                    Section {
+                        ForEach(section.items) { MenuRow(viewModel: .init(item: $0)) }
+                    } header: {
+                        Text(section.category)
+                    }
+                }
+            case .failure(let error):
+                VStack {
+                    Text("An error occurred while fetching menu data.")
+                    Text(error.localizedDescription)
+                        .italic()
+                }
         }
+        
     }
 }
 
