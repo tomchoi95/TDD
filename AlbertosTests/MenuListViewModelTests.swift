@@ -65,4 +65,7 @@ final class MenuListViewModelTests: XCTestCase {
         
         wait(for: [expectation], timeout: 1)
     }
+    
+    func testRetryFetchesMenuAgain() {}
+    func testRetryAfterFailureFetchesMenuAgainAndSucceeds() {}
 }
