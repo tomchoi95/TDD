@@ -19,7 +19,7 @@ final class MenuListViewModelTests: XCTestCase {
             isCalled = true
             return inputSections
         }
-        let viewModel = MenuList.ViewModel(menu: [.fixture()], menuGrouping: spyClosure)
+        let viewModel = MenuList.ViewModel(menuFetching: MenuFetchingPlaceholder(), menuGrouping: spyClosure)
         let sections = viewModel.sections
         
         XCTAssertTrue(isCalled)

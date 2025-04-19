@@ -17,7 +17,7 @@ final class MenuRowViewModelTests: XCTestCase {
         let viewModel = MenuRow.ViewModel(item: item)
         
         // Assert
-        XCTAssertEqual(viewModel.text, "name")
+        XCTAssertEqual(viewModel.itemName, "name")
     }
     
     // 뷰모델에서 매운거 들어갔을 때 로우에서 끝에 이모지가 붙어서 나오는지.
@@ -25,8 +25,8 @@ final class MenuRowViewModelTests: XCTestCase {
         // Arrange
         let item = MenuItem.fixture(name: "spicy name", spicy: true)
         let viewModel = MenuRow.ViewModel(item: item)
-        
+
         // Assert
-        XCTAssertEqual(viewModel.text, "spicy name 🌶️")
+        XCTAssertEqual(viewModel.itemName, "spicy name 🌶️")
     }
 }
