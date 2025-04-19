@@ -13,3 +13,10 @@ struct MenuSection: Identifiable {
     
     var id: String { category }
 }
+
+extension MenuSection {
+    func fixture(items: [MenuItem] = [.fixture()], categoty: String = "category") -> MenuSection {
+        
+        return MenuSection(items: items, category: categoty)
+    }
+}
