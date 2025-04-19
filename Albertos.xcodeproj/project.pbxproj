@@ -7,62 +7,62 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		B316CA3F2DB3676C00733EA0 /* PBXContainerItemProxy */ = {
+		B311BEF92DB367F900BCE0A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B316CA292DB3676A00733EA0 /* Project object */;
+			containerPortal = B311BEE32DB367F800BCE0A0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B316CA302DB3676A00733EA0;
-			remoteInfo = TDD;
+			remoteGlobalIDString = B311BEEA2DB367F800BCE0A0;
+			remoteInfo = Albertos;
 		};
-		B316CA492DB3676C00733EA0 /* PBXContainerItemProxy */ = {
+		B311BF032DB367FA00BCE0A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B316CA292DB3676A00733EA0 /* Project object */;
+			containerPortal = B311BEE32DB367F800BCE0A0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B316CA302DB3676A00733EA0;
-			remoteInfo = TDD;
+			remoteGlobalIDString = B311BEEA2DB367F800BCE0A0;
+			remoteInfo = Albertos;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B316CA312DB3676A00733EA0 /* TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B316CA3E2DB3676C00733EA0 /* TDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B316CA482DB3676C00733EA0 /* TDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B311BEEB2DB367F800BCE0A0 /* Albertos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albertos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B311BEF82DB367F900BCE0A0 /* AlbertosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B311BF022DB367FA00BCE0A0 /* AlbertosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B316CA332DB3676A00733EA0 /* TDD */ = {
+		B311BEED2DB367F800BCE0A0 /* Albertos */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TDD;
+			path = Albertos;
 			sourceTree = "<group>";
 		};
-		B316CA412DB3676C00733EA0 /* TDDTests */ = {
+		B311BEFB2DB367F900BCE0A0 /* AlbertosTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TDDTests;
+			path = AlbertosTests;
 			sourceTree = "<group>";
 		};
-		B316CA4B2DB3676C00733EA0 /* TDDUITests */ = {
+		B311BF052DB367FA00BCE0A0 /* AlbertosUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TDDUITests;
+			path = AlbertosUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B316CA2E2DB3676A00733EA0 /* Frameworks */ = {
+		B311BEE82DB367F800BCE0A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B316CA3B2DB3676C00733EA0 /* Frameworks */ = {
+		B311BEF52DB367F900BCE0A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B316CA452DB3676C00733EA0 /* Frameworks */ = {
+		B311BEFF2DB367FA00BCE0A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,22 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B316CA282DB3676A00733EA0 = {
+		B311BEE22DB367F800BCE0A0 = {
 			isa = PBXGroup;
 			children = (
-				B316CA332DB3676A00733EA0 /* TDD */,
-				B316CA412DB3676C00733EA0 /* TDDTests */,
-				B316CA4B2DB3676C00733EA0 /* TDDUITests */,
-				B316CA322DB3676A00733EA0 /* Products */,
+				B311BEED2DB367F800BCE0A0 /* Albertos */,
+				B311BEFB2DB367F900BCE0A0 /* AlbertosTests */,
+				B311BF052DB367FA00BCE0A0 /* AlbertosUITests */,
+				B311BEEC2DB367F800BCE0A0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B316CA322DB3676A00733EA0 /* Products */ = {
+		B311BEEC2DB367F800BCE0A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B316CA312DB3676A00733EA0 /* TDD.app */,
-				B316CA3E2DB3676C00733EA0 /* TDDTests.xctest */,
-				B316CA482DB3676C00733EA0 /* TDDUITests.xctest */,
+				B311BEEB2DB367F800BCE0A0 /* Albertos.app */,
+				B311BEF82DB367F900BCE0A0 /* AlbertosTests.xctest */,
+				B311BF022DB367FA00BCE0A0 /* AlbertosUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,134 +95,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B316CA302DB3676A00733EA0 /* TDD */ = {
+		B311BEEA2DB367F800BCE0A0 /* Albertos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B316CA522DB3676C00733EA0 /* Build configuration list for PBXNativeTarget "TDD" */;
+			buildConfigurationList = B311BF0C2DB367FA00BCE0A0 /* Build configuration list for PBXNativeTarget "Albertos" */;
 			buildPhases = (
-				B316CA2D2DB3676A00733EA0 /* Sources */,
-				B316CA2E2DB3676A00733EA0 /* Frameworks */,
-				B316CA2F2DB3676A00733EA0 /* Resources */,
+				B311BEE72DB367F800BCE0A0 /* Sources */,
+				B311BEE82DB367F800BCE0A0 /* Frameworks */,
+				B311BEE92DB367F800BCE0A0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				B316CA332DB3676A00733EA0 /* TDD */,
+				B311BEED2DB367F800BCE0A0 /* Albertos */,
 			);
-			name = TDD;
+			name = Albertos;
 			packageProductDependencies = (
 			);
-			productName = TDD;
-			productReference = B316CA312DB3676A00733EA0 /* TDD.app */;
+			productName = Albertos;
+			productReference = B311BEEB2DB367F800BCE0A0 /* Albertos.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B316CA3D2DB3676C00733EA0 /* TDDTests */ = {
+		B311BEF72DB367F900BCE0A0 /* AlbertosTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B316CA552DB3676C00733EA0 /* Build configuration list for PBXNativeTarget "TDDTests" */;
+			buildConfigurationList = B311BF0F2DB367FA00BCE0A0 /* Build configuration list for PBXNativeTarget "AlbertosTests" */;
 			buildPhases = (
-				B316CA3A2DB3676C00733EA0 /* Sources */,
-				B316CA3B2DB3676C00733EA0 /* Frameworks */,
-				B316CA3C2DB3676C00733EA0 /* Resources */,
+				B311BEF42DB367F900BCE0A0 /* Sources */,
+				B311BEF52DB367F900BCE0A0 /* Frameworks */,
+				B311BEF62DB367F900BCE0A0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B316CA402DB3676C00733EA0 /* PBXTargetDependency */,
+				B311BEFA2DB367F900BCE0A0 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B316CA412DB3676C00733EA0 /* TDDTests */,
+				B311BEFB2DB367F900BCE0A0 /* AlbertosTests */,
 			);
-			name = TDDTests;
+			name = AlbertosTests;
 			packageProductDependencies = (
 			);
-			productName = TDDTests;
-			productReference = B316CA3E2DB3676C00733EA0 /* TDDTests.xctest */;
+			productName = AlbertosTests;
+			productReference = B311BEF82DB367F900BCE0A0 /* AlbertosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B316CA472DB3676C00733EA0 /* TDDUITests */ = {
+		B311BF012DB367FA00BCE0A0 /* AlbertosUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B316CA582DB3676C00733EA0 /* Build configuration list for PBXNativeTarget "TDDUITests" */;
+			buildConfigurationList = B311BF122DB367FA00BCE0A0 /* Build configuration list for PBXNativeTarget "AlbertosUITests" */;
 			buildPhases = (
-				B316CA442DB3676C00733EA0 /* Sources */,
-				B316CA452DB3676C00733EA0 /* Frameworks */,
-				B316CA462DB3676C00733EA0 /* Resources */,
+				B311BEFE2DB367FA00BCE0A0 /* Sources */,
+				B311BEFF2DB367FA00BCE0A0 /* Frameworks */,
+				B311BF002DB367FA00BCE0A0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B316CA4A2DB3676C00733EA0 /* PBXTargetDependency */,
+				B311BF042DB367FA00BCE0A0 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B316CA4B2DB3676C00733EA0 /* TDDUITests */,
+				B311BF052DB367FA00BCE0A0 /* AlbertosUITests */,
 			);
-			name = TDDUITests;
+			name = AlbertosUITests;
 			packageProductDependencies = (
 			);
-			productName = TDDUITests;
-			productReference = B316CA482DB3676C00733EA0 /* TDDUITests.xctest */;
+			productName = AlbertosUITests;
+			productReference = B311BF022DB367FA00BCE0A0 /* AlbertosUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B316CA292DB3676A00733EA0 /* Project object */ = {
+		B311BEE32DB367F800BCE0A0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-					B316CA302DB3676A00733EA0 = {
+					B311BEEA2DB367F800BCE0A0 = {
 						CreatedOnToolsVersion = 16.3;
 					};
-					B316CA3D2DB3676C00733EA0 = {
+					B311BEF72DB367F900BCE0A0 = {
 						CreatedOnToolsVersion = 16.3;
-						TestTargetID = B316CA302DB3676A00733EA0;
+						TestTargetID = B311BEEA2DB367F800BCE0A0;
 					};
-					B316CA472DB3676C00733EA0 = {
+					B311BF012DB367FA00BCE0A0 = {
 						CreatedOnToolsVersion = 16.3;
-						TestTargetID = B316CA302DB3676A00733EA0;
+						TestTargetID = B311BEEA2DB367F800BCE0A0;
 					};
 				};
 			};
-			buildConfigurationList = B316CA2C2DB3676A00733EA0 /* Build configuration list for PBXProject "TDD" */;
+			buildConfigurationList = B311BEE62DB367F800BCE0A0 /* Build configuration list for PBXProject "Albertos" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = B316CA282DB3676A00733EA0;
+			mainGroup = B311BEE22DB367F800BCE0A0;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = B316CA322DB3676A00733EA0 /* Products */;
+			productRefGroup = B311BEEC2DB367F800BCE0A0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B316CA302DB3676A00733EA0 /* TDD */,
-				B316CA3D2DB3676C00733EA0 /* TDDTests */,
-				B316CA472DB3676C00733EA0 /* TDDUITests */,
+				B311BEEA2DB367F800BCE0A0 /* Albertos */,
+				B311BEF72DB367F900BCE0A0 /* AlbertosTests */,
+				B311BF012DB367FA00BCE0A0 /* AlbertosUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B316CA2F2DB3676A00733EA0 /* Resources */ = {
+		B311BEE92DB367F800BCE0A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B316CA3C2DB3676C00733EA0 /* Resources */ = {
+		B311BEF62DB367F900BCE0A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B316CA462DB3676C00733EA0 /* Resources */ = {
+		B311BF002DB367FA00BCE0A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,21 +232,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B316CA2D2DB3676A00733EA0 /* Sources */ = {
+		B311BEE72DB367F800BCE0A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B316CA3A2DB3676C00733EA0 /* Sources */ = {
+		B311BEF42DB367F900BCE0A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B316CA442DB3676C00733EA0 /* Sources */ = {
+		B311BEFE2DB367FA00BCE0A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,20 +256,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B316CA402DB3676C00733EA0 /* PBXTargetDependency */ = {
+		B311BEFA2DB367F900BCE0A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B316CA302DB3676A00733EA0 /* TDD */;
-			targetProxy = B316CA3F2DB3676C00733EA0 /* PBXContainerItemProxy */;
+			target = B311BEEA2DB367F800BCE0A0 /* Albertos */;
+			targetProxy = B311BEF92DB367F900BCE0A0 /* PBXContainerItemProxy */;
 		};
-		B316CA4A2DB3676C00733EA0 /* PBXTargetDependency */ = {
+		B311BF042DB367FA00BCE0A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B316CA302DB3676A00733EA0 /* TDD */;
-			targetProxy = B316CA492DB3676C00733EA0 /* PBXContainerItemProxy */;
+			target = B311BEEA2DB367F800BCE0A0 /* Albertos */;
+			targetProxy = B311BF032DB367FA00BCE0A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		B316CA502DB3676C00733EA0 /* Debug */ = {
+		B311BF0A2DB367FA00BCE0A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -333,7 +333,7 @@
 			};
 			name = Debug;
 		};
-		B316CA512DB3676C00733EA0 /* Release */ = {
+		B311BF0B2DB367FA00BCE0A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -390,7 +390,7 @@
 			};
 			name = Release;
 		};
-		B316CA532DB3676C00733EA0 /* Debug */ = {
+		B311BF0D2DB367FA00BCE0A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -410,7 +410,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.TDD;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.Albertos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -418,7 +418,7 @@
 			};
 			name = Debug;
 		};
-		B316CA542DB3676C00733EA0 /* Release */ = {
+		B311BF0E2DB367FA00BCE0A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -438,7 +438,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.TDD;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.Albertos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -446,7 +446,7 @@
 			};
 			name = Release;
 		};
-		B316CA562DB3676C00733EA0 /* Debug */ = {
+		B311BF102DB367FA00BCE0A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,16 +456,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.TDDTests;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.AlbertosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TDD";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Albertos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Albertos";
 			};
 			name = Debug;
 		};
-		B316CA572DB3676C00733EA0 /* Release */ = {
+		B311BF112DB367FA00BCE0A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,16 +475,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.TDDTests;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.AlbertosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TDD";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Albertos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Albertos";
 			};
 			name = Release;
 		};
-		B316CA592DB3676C00733EA0 /* Debug */ = {
+		B311BF132DB367FA00BCE0A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -492,16 +492,16 @@
 				DEVELOPMENT_TEAM = 59FP2PXRXK;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.TDDUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.AlbertosUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TDD;
+				TEST_TARGET_NAME = Albertos;
 			};
 			name = Debug;
 		};
-		B316CA5A2DB3676C00733EA0 /* Release */ = {
+		B311BF142DB367FA00BCE0A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -509,55 +509,55 @@
 				DEVELOPMENT_TEAM = 59FP2PXRXK;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.TDDUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.AlbertosUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TDD;
+				TEST_TARGET_NAME = Albertos;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B316CA2C2DB3676A00733EA0 /* Build configuration list for PBXProject "TDD" */ = {
+		B311BEE62DB367F800BCE0A0 /* Build configuration list for PBXProject "Albertos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B316CA502DB3676C00733EA0 /* Debug */,
-				B316CA512DB3676C00733EA0 /* Release */,
+				B311BF0A2DB367FA00BCE0A0 /* Debug */,
+				B311BF0B2DB367FA00BCE0A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B316CA522DB3676C00733EA0 /* Build configuration list for PBXNativeTarget "TDD" */ = {
+		B311BF0C2DB367FA00BCE0A0 /* Build configuration list for PBXNativeTarget "Albertos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B316CA532DB3676C00733EA0 /* Debug */,
-				B316CA542DB3676C00733EA0 /* Release */,
+				B311BF0D2DB367FA00BCE0A0 /* Debug */,
+				B311BF0E2DB367FA00BCE0A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B316CA552DB3676C00733EA0 /* Build configuration list for PBXNativeTarget "TDDTests" */ = {
+		B311BF0F2DB367FA00BCE0A0 /* Build configuration list for PBXNativeTarget "AlbertosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B316CA562DB3676C00733EA0 /* Debug */,
-				B316CA572DB3676C00733EA0 /* Release */,
+				B311BF102DB367FA00BCE0A0 /* Debug */,
+				B311BF112DB367FA00BCE0A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B316CA582DB3676C00733EA0 /* Build configuration list for PBXNativeTarget "TDDUITests" */ = {
+		B311BF122DB367FA00BCE0A0 /* Build configuration list for PBXNativeTarget "AlbertosUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B316CA592DB3676C00733EA0 /* Debug */,
-				B316CA5A2DB3676C00733EA0 /* Release */,
+				B311BF132DB367FA00BCE0A0 /* Debug */,
+				B311BF142DB367FA00BCE0A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B316CA292DB3676A00733EA0 /* Project object */;
+	rootObject = B311BEE32DB367F800BCE0A0 /* Project object */;
 }

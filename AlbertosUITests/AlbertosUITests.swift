@@ -1,13 +1,13 @@
 //
-//  TDDUITests.swift
-//  TDDUITests
+//  AlbertosUITests.swift
+//  AlbertosUITests
 //
 //  Created by 최범수 on 2025-04-19.
 //
 
 import XCTest
 
-final class TDDUITests: XCTestCase {
+final class AlbertosUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

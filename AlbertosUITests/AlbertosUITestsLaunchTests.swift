@@ -1,13 +1,13 @@
 //
-//  TDDUITestsLaunchTests.swift
-//  TDDUITests
+//  AlbertosUITestsLaunchTests.swift
+//  AlbertosUITests
 //
 //  Created by 최범수 on 2025-04-19.
 //
 
 import XCTest
 
-final class TDDUITestsLaunchTests: XCTestCase {
+final class AlbertosUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

@@ -1,14 +1,14 @@
 //
-//  TDDTests.swift
-//  TDDTests
+//  AlbertosTests.swift
+//  AlbertosTests
 //
 //  Created by 최범수 on 2025-04-19.
 //
 
 import XCTest
-@testable import TDD
+@testable import Albertos
 
-final class TDDTests: XCTestCase {
+final class AlbertosTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
