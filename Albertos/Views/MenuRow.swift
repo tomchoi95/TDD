@@ -9,10 +9,12 @@ import SwiftUI
 
 extension MenuRow {
     class ViewModel: ObservableObject {
-        @Published var text: String
+        @Published private(set) var item: MenuItem
+        @Published private(set) var itemName: String
         
         init(item: MenuItem) {
-            self.text = item.spicy ? "\(item.name) 🌶️" : item.name
+            self.item = item
+            self.itemName = item.spicy ? item.name + " 🌶️" : item.name
         }
     }
 }
@@ -21,10 +23,14 @@ struct MenuRow: View {
     @StateObject var viewModel: ViewModel
     
     var body: some View {
-        Text(viewModel.text)
+        HStack {
+            Text(viewModel.itemName)
+            Spacer()
+            Text("$\(viewModel.item.price, specifier: "%.2f")")
+        }
     }
 }
 
 #Preview {
-    MenuRow(viewModel: .init(item: .fixture()))
+    MenuRow(viewModel: .init(item: .fixture(category: "category", name: "name", spicy: true, price: 21.99)))
 }

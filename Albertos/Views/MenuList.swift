@@ -33,9 +33,7 @@ struct MenuList: View {
         //Initializer 'init(_:rowContent:)' requires that 'MenuSection' conform to 'Identifiable' -> 메뉴 섹션 Identifiable 만족하러 가자.
         List(viewModel.sections) { section in
             Section {
-                ForEach(section.items) { item in
-                    Text(item.name)
-                }
+                ForEach(section.items) { MenuRow(viewModel: .init(item: $0)) }
             } header: {
                 Text(section.category)
             }
@@ -44,5 +42,5 @@ struct MenuList: View {
 }
 
 #Preview {
-    MenuList(viewModel: .init(menu: menu))
+    MenuList(viewModel: .init(menuFetching: MenuFetchingPlaceholder()))
 }
