@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MenuSection: Identifiable {
+struct MenuSection: Identifiable, Equatable {
     let items: [MenuItem]
     let category: String
     
@@ -15,7 +15,7 @@ struct MenuSection: Identifiable {
 }
 
 extension MenuSection {
-    func fixture(items: [MenuItem] = [.fixture()], categoty: String = "category") -> MenuSection {
+    static func fixture(items: [MenuItem] = [.fixture()], categoty: String = "category") -> MenuSection {
         
         return MenuSection(items: items, category: categoty)
     }
