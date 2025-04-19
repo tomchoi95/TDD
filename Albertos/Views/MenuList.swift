@@ -17,6 +17,7 @@ extension MenuList {
         init(menuFetching: MenuFetching, menuGrouping: @escaping ([MenuItem]) -> ([MenuSection]) = groupMenuByCategory) {
             self.menuFetching = menuFetching
             self.menuGrouping = menuGrouping
+            fetchMenu()
         }
         
         func fetchMenu() {
@@ -52,6 +53,11 @@ struct MenuList: View {
                     Text("An error occurred while fetching menu data.")
                     Text(error.localizedDescription)
                         .italic()
+                    Button("retry", action: viewModel.retry)
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundStyle(.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
                 }
         }
         
