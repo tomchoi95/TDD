@@ -11,14 +11,25 @@ import Combine
 extension MenuList {
     class ViewModel: ObservableObject {
         @Published private(set) var sections: Result<[MenuSection], Error> = .success([])
+        private let menuFetching: MenuFetching
+        private let menuGrouping: ([MenuItem]) -> ([MenuSection])
         
         init(menuFetching: MenuFetching, menuGrouping: @escaping ([MenuItem]) -> ([MenuSection]) = groupMenuByCategory) {
+            self.menuFetching = menuFetching
+            self.menuGrouping = menuGrouping
+        }
+        
+        func fetchMenu() {
             menuFetching.fetchMenu()
                 .receive(on: RunLoop.main)
                 .map(menuGrouping)
                 .map { Result<[MenuSection], Error>.success($0) }
                 .catch { Just(Result<[MenuSection], Error>.failure($0)) }
                 .assign(to: &$sections)
+        }
+        
+        func retry() {
+            fetchMenu()
         }
     }
 }
