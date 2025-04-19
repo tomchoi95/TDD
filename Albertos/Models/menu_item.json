@@ -1,9 +1,0 @@
-{
-    "name": "a name",
-    "category": {
-        "name": "a category",
-        "id": 123
-    },
-    "spicy": false,
-    "price": 100
-}

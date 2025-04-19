@@ -6,278 +6,63 @@
 	objectVersion = 77;
 	objects = {
 
-<<<<<<< HEAD
 /* Begin PBXContainerItemProxy section */
-		B316C9D42DB3633D00733EA0 /* PBXContainerItemProxy */ = {
+		B316CA3F2DB3676C00733EA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B316C9BE2DB3633C00733EA0 /* Project object */;
+			containerPortal = B316CA292DB3676A00733EA0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B316C9C52DB3633C00733EA0;
+			remoteGlobalIDString = B316CA302DB3676A00733EA0;
 			remoteInfo = TDD;
 		};
-		B316C9DE2DB3633D00733EA0 /* PBXContainerItemProxy */ = {
+		B316CA492DB3676C00733EA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B316C9BE2DB3633C00733EA0 /* Project object */;
+			containerPortal = B316CA292DB3676A00733EA0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B316C9C52DB3633C00733EA0;
+			remoteGlobalIDString = B316CA302DB3676A00733EA0;
 			remoteInfo = TDD;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B316C9C62DB3633C00733EA0 /* TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B316C9D32DB3633D00733EA0 /* TDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B316C9DD2DB3633D00733EA0 /* TDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B316CA312DB3676A00733EA0 /* TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B316CA3E2DB3676C00733EA0 /* TDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B316CA482DB3676C00733EA0 /* TDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B316C9C82DB3633C00733EA0 /* TDD */ = {
-=======
-/* Begin PBXBuildFile section */
-		B316C85F2DB1EA5000733EA0 /* HippoAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B316C8542DB1EA4F00733EA0 /* HippoAnalytics.framework */; };
-		B316C8692DB1EA5000733EA0 /* HippoAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B316C8542DB1EA4F00733EA0 /* HippoAnalytics.framework */; };
-		B316C86A2DB1EA5000733EA0 /* HippoAnalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B316C8542DB1EA4F00733EA0 /* HippoAnalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B316C8862DB1F27D00733EA0 /* HippoPayments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B316C87B2DB1F27D00733EA0 /* HippoPayments.framework */; };
-		B316C8902DB1F27D00733EA0 /* HippoPayments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B316C87B2DB1F27D00733EA0 /* HippoPayments.framework */; };
-		B316C8912DB1F27D00733EA0 /* HippoPayments.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B316C87B2DB1F27D00733EA0 /* HippoPayments.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B316C8602DB1EA5000733EA0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B366B1CC2DACD4D4007C72B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B316C8532DB1EA4F00733EA0;
-			remoteInfo = HippoAnalytics;
-		};
-		B316C8622DB1EA5000733EA0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B366B1CC2DACD4D4007C72B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B366B1D32DACD4D4007C72B6;
-			remoteInfo = TDD;
-		};
-		B316C8672DB1EA5000733EA0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B366B1CC2DACD4D4007C72B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B316C8532DB1EA4F00733EA0;
-			remoteInfo = HippoAnalytics;
-		};
-		B316C8872DB1F27D00733EA0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B366B1CC2DACD4D4007C72B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B316C87A2DB1F27D00733EA0;
-			remoteInfo = HippoPayments;
-		};
-		B316C8892DB1F27D00733EA0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B366B1CC2DACD4D4007C72B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B366B1D32DACD4D4007C72B6;
-			remoteInfo = TDD;
-		};
-		B316C88E2DB1F27D00733EA0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B366B1CC2DACD4D4007C72B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B316C87A2DB1F27D00733EA0;
-			remoteInfo = HippoPayments;
-		};
-		B366B1E22DACD4D6007C72B6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B366B1CC2DACD4D4007C72B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B366B1D32DACD4D4007C72B6;
-			remoteInfo = TDD;
-		};
-		B366B2372DAD0486007C72B6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B366B1CC2DACD4D4007C72B6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B366B2292DAD0484007C72B6;
-			remoteInfo = Albertos;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B316C86B2DB1EA5000733EA0 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B316C8912DB1F27D00733EA0 /* HippoPayments.framework in Embed Frameworks */,
-				B316C86A2DB1EA5000733EA0 /* HippoAnalytics.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		B316C8542DB1EA4F00733EA0 /* HippoAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HippoAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B316C85E2DB1EA5000733EA0 /* HippoAnalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HippoAnalyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B316C87B2DB1F27D00733EA0 /* HippoPayments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HippoPayments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B316C8852DB1F27D00733EA0 /* HippoPaymentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HippoPaymentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B366B1D42DACD4D4007C72B6 /* TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B366B1E12DACD4D6007C72B6 /* TDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B366B22A2DAD0484007C72B6 /* Albertos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albertos.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B366B2362DAD0486007C72B6 /* AlbertosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		B3412FA62DAF7B8F00C93B5B /* Exceptions for "Albertos" folder in "AlbertosTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Models/menu_item.json,
-			);
-			target = B366B2352DAD0486007C72B6 /* AlbertosTests */;
-		};
-		B366B2512DAD0500007C72B6 /* Exceptions for "Albertos" folder in "TDD" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Requirement,
-			);
-			target = B366B1D32DACD4D4007C72B6 /* TDD */;
-		};
-		B366B2522DAD0500007C72B6 /* Exceptions for "Albertos" folder in "Albertos" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Models/menu_item.json,
-				Requirement,
-			);
-			target = B366B2292DAD0484007C72B6 /* Albertos */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B316C8552DB1EA4F00733EA0 /* HippoAnalytics */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HippoAnalytics;
-			sourceTree = "<group>";
-		};
-		B316C8642DB1EA5000733EA0 /* HippoAnalyticsTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HippoAnalyticsTests;
-			sourceTree = "<group>";
-		};
-		B316C87C2DB1F27D00733EA0 /* HippoPayments */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HippoPayments;
-			sourceTree = "<group>";
-		};
-		B316C88B2DB1F27D00733EA0 /* HippoPaymentsTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HippoPaymentsTests;
-			sourceTree = "<group>";
-		};
-		B366B1D62DACD4D4007C72B6 /* TDD */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA332DB3676A00733EA0 /* TDD */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TDD;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		B316C9D62DB3633D00733EA0 /* TDDTests */ = {
-=======
-		B366B1E42DACD4D6007C72B6 /* TDDTests */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA412DB3676C00733EA0 /* TDDTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TDDTests;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		B316C9E02DB3633D00733EA0 /* TDDUITests */ = {
+		B316CA4B2DB3676C00733EA0 /* TDDUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TDDUITests;
-=======
-		B366B22B2DAD0484007C72B6 /* Albertos */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				B366B2512DAD0500007C72B6 /* Exceptions for "Albertos" folder in "TDD" target */,
-				B366B2522DAD0500007C72B6 /* Exceptions for "Albertos" folder in "Albertos" target */,
-				B3412FA62DAF7B8F00C93B5B /* Exceptions for "Albertos" folder in "AlbertosTests" target */,
-			);
-			path = Albertos;
-			sourceTree = "<group>";
-		};
-		B366B2392DAD0486007C72B6 /* AlbertosTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = AlbertosTests;
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-<<<<<<< HEAD
-		B316C9C32DB3633C00733EA0 /* Frameworks */ = {
-=======
-		B316C8512DB1EA4F00733EA0 /* Frameworks */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA2E2DB3676A00733EA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
-		B316C9D02DB3633D00733EA0 /* Frameworks */ = {
-=======
-		B316C85B2DB1EA5000733EA0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B316C85F2DB1EA5000733EA0 /* HippoAnalytics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B316C8782DB1F27D00733EA0 /* Frameworks */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA3B2DB3676C00733EA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
-		B316C9DA2DB3633D00733EA0 /* Frameworks */ = {
-=======
-		B316C8822DB1F27D00733EA0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B316C8862DB1F27D00733EA0 /* HippoPayments.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B366B1D12DACD4D4007C72B6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B316C8902DB1F27D00733EA0 /* HippoPayments.framework in Frameworks */,
-				B316C8692DB1EA5000733EA0 /* HippoAnalytics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B366B1DE2DACD4D6007C72B6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B366B2272DAD0484007C72B6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B366B2332DAD0486007C72B6 /* Frameworks */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA452DB3676C00733EA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,488 +72,157 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
-		B316C9BD2DB3633C00733EA0 = {
+		B316CA282DB3676A00733EA0 = {
 			isa = PBXGroup;
 			children = (
-				B316C9C82DB3633C00733EA0 /* TDD */,
-				B316C9D62DB3633D00733EA0 /* TDDTests */,
-				B316C9E02DB3633D00733EA0 /* TDDUITests */,
-				B316C9C72DB3633C00733EA0 /* Products */,
+				B316CA332DB3676A00733EA0 /* TDD */,
+				B316CA412DB3676C00733EA0 /* TDDTests */,
+				B316CA4B2DB3676C00733EA0 /* TDDUITests */,
+				B316CA322DB3676A00733EA0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B316C9C72DB3633C00733EA0 /* Products */ = {
+		B316CA322DB3676A00733EA0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B316C9C62DB3633C00733EA0 /* TDD.app */,
-				B316C9D32DB3633D00733EA0 /* TDDTests.xctest */,
-				B316C9DD2DB3633D00733EA0 /* TDDUITests.xctest */,
-=======
-		B366B1CB2DACD4D4007C72B6 = {
-			isa = PBXGroup;
-			children = (
-				B366B1D62DACD4D4007C72B6 /* TDD */,
-				B366B1E42DACD4D6007C72B6 /* TDDTests */,
-				B366B22B2DAD0484007C72B6 /* Albertos */,
-				B366B2392DAD0486007C72B6 /* AlbertosTests */,
-				B316C8552DB1EA4F00733EA0 /* HippoAnalytics */,
-				B316C8642DB1EA5000733EA0 /* HippoAnalyticsTests */,
-				B316C87C2DB1F27D00733EA0 /* HippoPayments */,
-				B316C88B2DB1F27D00733EA0 /* HippoPaymentsTests */,
-				B366B1D52DACD4D4007C72B6 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		B366B1D52DACD4D4007C72B6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B366B1D42DACD4D4007C72B6 /* TDD.app */,
-				B366B1E12DACD4D6007C72B6 /* TDDTests.xctest */,
-				B366B22A2DAD0484007C72B6 /* Albertos.app */,
-				B366B2362DAD0486007C72B6 /* AlbertosTests.xctest */,
-				B316C8542DB1EA4F00733EA0 /* HippoAnalytics.framework */,
-				B316C85E2DB1EA5000733EA0 /* HippoAnalyticsTests.xctest */,
-				B316C87B2DB1F27D00733EA0 /* HippoPayments.framework */,
-				B316C8852DB1F27D00733EA0 /* HippoPaymentsTests.xctest */,
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+				B316CA312DB3676A00733EA0 /* TDD.app */,
+				B316CA3E2DB3676C00733EA0 /* TDDTests.xctest */,
+				B316CA482DB3676C00733EA0 /* TDDUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-<<<<<<< HEAD
 /* Begin PBXNativeTarget section */
-		B316C9C52DB3633C00733EA0 /* TDD */ = {
+		B316CA302DB3676A00733EA0 /* TDD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B316C9E72DB3633D00733EA0 /* Build configuration list for PBXNativeTarget "TDD" */;
+			buildConfigurationList = B316CA522DB3676C00733EA0 /* Build configuration list for PBXNativeTarget "TDD" */;
 			buildPhases = (
-				B316C9C22DB3633C00733EA0 /* Sources */,
-				B316C9C32DB3633C00733EA0 /* Frameworks */,
-				B316C9C42DB3633C00733EA0 /* Resources */,
-=======
-/* Begin PBXHeadersBuildPhase section */
-		B316C84F2DB1EA4F00733EA0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B316C8762DB1F27D00733EA0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		B316C8532DB1EA4F00733EA0 /* HippoAnalytics */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B316C8702DB1EA5000733EA0 /* Build configuration list for PBXNativeTarget "HippoAnalytics" */;
-			buildPhases = (
-				B316C84F2DB1EA4F00733EA0 /* Headers */,
-				B316C8502DB1EA4F00733EA0 /* Sources */,
-				B316C8512DB1EA4F00733EA0 /* Frameworks */,
-				B316C8522DB1EA4F00733EA0 /* Resources */,
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+				B316CA2D2DB3676A00733EA0 /* Sources */,
+				B316CA2E2DB3676A00733EA0 /* Frameworks */,
+				B316CA2F2DB3676A00733EA0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-<<<<<<< HEAD
-				B316C9C82DB3633C00733EA0 /* TDD */,
-=======
-				B316C8552DB1EA4F00733EA0 /* HippoAnalytics */,
-			);
-			name = HippoAnalytics;
-			packageProductDependencies = (
-			);
-			productName = HippoAnalytics;
-			productReference = B316C8542DB1EA4F00733EA0 /* HippoAnalytics.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B316C85D2DB1EA5000733EA0 /* HippoAnalyticsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B316C8712DB1EA5000733EA0 /* Build configuration list for PBXNativeTarget "HippoAnalyticsTests" */;
-			buildPhases = (
-				B316C85A2DB1EA5000733EA0 /* Sources */,
-				B316C85B2DB1EA5000733EA0 /* Frameworks */,
-				B316C85C2DB1EA5000733EA0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B316C8612DB1EA5000733EA0 /* PBXTargetDependency */,
-				B316C8632DB1EA5000733EA0 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B316C8642DB1EA5000733EA0 /* HippoAnalyticsTests */,
-			);
-			name = HippoAnalyticsTests;
-			packageProductDependencies = (
-			);
-			productName = HippoAnalyticsTests;
-			productReference = B316C85E2DB1EA5000733EA0 /* HippoAnalyticsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B316C87A2DB1F27D00733EA0 /* HippoPayments */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B316C8922DB1F27D00733EA0 /* Build configuration list for PBXNativeTarget "HippoPayments" */;
-			buildPhases = (
-				B316C8762DB1F27D00733EA0 /* Headers */,
-				B316C8772DB1F27D00733EA0 /* Sources */,
-				B316C8782DB1F27D00733EA0 /* Frameworks */,
-				B316C8792DB1F27D00733EA0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				B316C87C2DB1F27D00733EA0 /* HippoPayments */,
-			);
-			name = HippoPayments;
-			packageProductDependencies = (
-			);
-			productName = HippoPayments;
-			productReference = B316C87B2DB1F27D00733EA0 /* HippoPayments.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B316C8842DB1F27D00733EA0 /* HippoPaymentsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B316C8952DB1F27D00733EA0 /* Build configuration list for PBXNativeTarget "HippoPaymentsTests" */;
-			buildPhases = (
-				B316C8812DB1F27D00733EA0 /* Sources */,
-				B316C8822DB1F27D00733EA0 /* Frameworks */,
-				B316C8832DB1F27D00733EA0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B316C8882DB1F27D00733EA0 /* PBXTargetDependency */,
-				B316C88A2DB1F27D00733EA0 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B316C88B2DB1F27D00733EA0 /* HippoPaymentsTests */,
-			);
-			name = HippoPaymentsTests;
-			packageProductDependencies = (
-			);
-			productName = HippoPaymentsTests;
-			productReference = B316C8852DB1F27D00733EA0 /* HippoPaymentsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B366B1D32DACD4D4007C72B6 /* TDD */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B366B1F52DACD4D6007C72B6 /* Build configuration list for PBXNativeTarget "TDD" */;
-			buildPhases = (
-				B366B1D02DACD4D4007C72B6 /* Sources */,
-				B366B1D12DACD4D4007C72B6 /* Frameworks */,
-				B366B1D22DACD4D4007C72B6 /* Resources */,
-				B316C86B2DB1EA5000733EA0 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B316C8682DB1EA5000733EA0 /* PBXTargetDependency */,
-				B316C88F2DB1F27D00733EA0 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B366B1D62DACD4D4007C72B6 /* TDD */,
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+				B316CA332DB3676A00733EA0 /* TDD */,
 			);
 			name = TDD;
 			packageProductDependencies = (
 			);
 			productName = TDD;
-<<<<<<< HEAD
-			productReference = B316C9C62DB3633C00733EA0 /* TDD.app */;
+			productReference = B316CA312DB3676A00733EA0 /* TDD.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B316C9D22DB3633D00733EA0 /* TDDTests */ = {
+		B316CA3D2DB3676C00733EA0 /* TDDTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B316C9EA2DB3633D00733EA0 /* Build configuration list for PBXNativeTarget "TDDTests" */;
+			buildConfigurationList = B316CA552DB3676C00733EA0 /* Build configuration list for PBXNativeTarget "TDDTests" */;
 			buildPhases = (
-				B316C9CF2DB3633D00733EA0 /* Sources */,
-				B316C9D02DB3633D00733EA0 /* Frameworks */,
-				B316C9D12DB3633D00733EA0 /* Resources */,
-=======
-			productReference = B366B1D42DACD4D4007C72B6 /* TDD.app */;
-			productType = "com.apple.product-type.application";
-		};
-		B366B1E02DACD4D6007C72B6 /* TDDTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B366B1F82DACD4D6007C72B6 /* Build configuration list for PBXNativeTarget "TDDTests" */;
-			buildPhases = (
-				B366B1DD2DACD4D6007C72B6 /* Sources */,
-				B366B1DE2DACD4D6007C72B6 /* Frameworks */,
-				B366B1DF2DACD4D6007C72B6 /* Resources */,
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+				B316CA3A2DB3676C00733EA0 /* Sources */,
+				B316CA3B2DB3676C00733EA0 /* Frameworks */,
+				B316CA3C2DB3676C00733EA0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-<<<<<<< HEAD
-				B316C9D52DB3633D00733EA0 /* PBXTargetDependency */,
+				B316CA402DB3676C00733EA0 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B316C9D62DB3633D00733EA0 /* TDDTests */,
-=======
-				B366B1E32DACD4D6007C72B6 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B366B1E42DACD4D6007C72B6 /* TDDTests */,
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+				B316CA412DB3676C00733EA0 /* TDDTests */,
 			);
 			name = TDDTests;
 			packageProductDependencies = (
 			);
 			productName = TDDTests;
-<<<<<<< HEAD
-			productReference = B316C9D32DB3633D00733EA0 /* TDDTests.xctest */;
+			productReference = B316CA3E2DB3676C00733EA0 /* TDDTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B316C9DC2DB3633D00733EA0 /* TDDUITests */ = {
+		B316CA472DB3676C00733EA0 /* TDDUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B316C9ED2DB3633D00733EA0 /* Build configuration list for PBXNativeTarget "TDDUITests" */;
+			buildConfigurationList = B316CA582DB3676C00733EA0 /* Build configuration list for PBXNativeTarget "TDDUITests" */;
 			buildPhases = (
-				B316C9D92DB3633D00733EA0 /* Sources */,
-				B316C9DA2DB3633D00733EA0 /* Frameworks */,
-				B316C9DB2DB3633D00733EA0 /* Resources */,
-=======
-			productReference = B366B1E12DACD4D6007C72B6 /* TDDTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B366B2292DAD0484007C72B6 /* Albertos */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B366B2482DAD0486007C72B6 /* Build configuration list for PBXNativeTarget "Albertos" */;
-			buildPhases = (
-				B366B2262DAD0484007C72B6 /* Sources */,
-				B366B2272DAD0484007C72B6 /* Frameworks */,
-				B366B2282DAD0484007C72B6 /* Resources */,
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+				B316CA442DB3676C00733EA0 /* Sources */,
+				B316CA452DB3676C00733EA0 /* Frameworks */,
+				B316CA462DB3676C00733EA0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-<<<<<<< HEAD
-				B316C9DF2DB3633D00733EA0 /* PBXTargetDependency */,
+				B316CA4A2DB3676C00733EA0 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B316C9E02DB3633D00733EA0 /* TDDUITests */,
+				B316CA4B2DB3676C00733EA0 /* TDDUITests */,
 			);
 			name = TDDUITests;
 			packageProductDependencies = (
 			);
 			productName = TDDUITests;
-			productReference = B316C9DD2DB3633D00733EA0 /* TDDUITests.xctest */;
+			productReference = B316CA482DB3676C00733EA0 /* TDDUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
-=======
-			);
-			fileSystemSynchronizedGroups = (
-				B316C8552DB1EA4F00733EA0 /* HippoAnalytics */,
-				B366B22B2DAD0484007C72B6 /* Albertos */,
-			);
-			name = Albertos;
-			packageProductDependencies = (
-			);
-			productName = Albertos;
-			productReference = B366B22A2DAD0484007C72B6 /* Albertos.app */;
-			productType = "com.apple.product-type.application";
-		};
-		B366B2352DAD0486007C72B6 /* AlbertosTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B366B24B2DAD0486007C72B6 /* Build configuration list for PBXNativeTarget "AlbertosTests" */;
-			buildPhases = (
-				B366B2322DAD0486007C72B6 /* Sources */,
-				B366B2332DAD0486007C72B6 /* Frameworks */,
-				B366B2342DAD0486007C72B6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B366B2382DAD0486007C72B6 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B366B2392DAD0486007C72B6 /* AlbertosTests */,
-			);
-			name = AlbertosTests;
-			packageProductDependencies = (
-			);
-			productName = AlbertosTests;
-			productReference = B366B2362DAD0486007C72B6 /* AlbertosTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-<<<<<<< HEAD
-		B316C9BE2DB3633C00733EA0 /* Project object */ = {
-=======
-		B366B1CC2DACD4D4007C72B6 /* Project object */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA292DB3676A00733EA0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-<<<<<<< HEAD
-					B316C9C52DB3633C00733EA0 = {
+					B316CA302DB3676A00733EA0 = {
 						CreatedOnToolsVersion = 16.3;
 					};
-					B316C9D22DB3633D00733EA0 = {
+					B316CA3D2DB3676C00733EA0 = {
 						CreatedOnToolsVersion = 16.3;
-						TestTargetID = B316C9C52DB3633C00733EA0;
+						TestTargetID = B316CA302DB3676A00733EA0;
 					};
-					B316C9DC2DB3633D00733EA0 = {
+					B316CA472DB3676C00733EA0 = {
 						CreatedOnToolsVersion = 16.3;
-						TestTargetID = B316C9C52DB3633C00733EA0;
-					};
-				};
-			};
-			buildConfigurationList = B316C9C12DB3633C00733EA0 /* Build configuration list for PBXProject "TDD" */;
-=======
-					B316C8532DB1EA4F00733EA0 = {
-						CreatedOnToolsVersion = 16.3;
-					};
-					B316C85D2DB1EA5000733EA0 = {
-						CreatedOnToolsVersion = 16.3;
-						TestTargetID = B366B1D32DACD4D4007C72B6;
-					};
-					B316C87A2DB1F27D00733EA0 = {
-						CreatedOnToolsVersion = 16.3;
-					};
-					B316C8842DB1F27D00733EA0 = {
-						CreatedOnToolsVersion = 16.3;
-						TestTargetID = B366B1D32DACD4D4007C72B6;
-					};
-					B366B1D32DACD4D4007C72B6 = {
-						CreatedOnToolsVersion = 16.3;
-					};
-					B366B1E02DACD4D6007C72B6 = {
-						CreatedOnToolsVersion = 16.3;
-						TestTargetID = B366B1D32DACD4D4007C72B6;
-					};
-					B366B2292DAD0484007C72B6 = {
-						CreatedOnToolsVersion = 16.3;
-					};
-					B366B2352DAD0486007C72B6 = {
-						CreatedOnToolsVersion = 16.3;
-						TestTargetID = B366B2292DAD0484007C72B6;
+						TestTargetID = B316CA302DB3676A00733EA0;
 					};
 				};
 			};
-			buildConfigurationList = B366B1CF2DACD4D4007C72B6 /* Build configuration list for PBXProject "TDD" */;
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+			buildConfigurationList = B316CA2C2DB3676A00733EA0 /* Build configuration list for PBXProject "TDD" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-<<<<<<< HEAD
-			mainGroup = B316C9BD2DB3633C00733EA0;
+			mainGroup = B316CA282DB3676A00733EA0;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = B316C9C72DB3633C00733EA0 /* Products */;
+			productRefGroup = B316CA322DB3676A00733EA0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B316C9C52DB3633C00733EA0 /* TDD */,
-				B316C9D22DB3633D00733EA0 /* TDDTests */,
-				B316C9DC2DB3633D00733EA0 /* TDDUITests */,
-=======
-			mainGroup = B366B1CB2DACD4D4007C72B6;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
-			productRefGroup = B366B1D52DACD4D4007C72B6 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				B366B1D32DACD4D4007C72B6 /* TDD */,
-				B366B1E02DACD4D6007C72B6 /* TDDTests */,
-				B366B2292DAD0484007C72B6 /* Albertos */,
-				B366B2352DAD0486007C72B6 /* AlbertosTests */,
-				B316C8532DB1EA4F00733EA0 /* HippoAnalytics */,
-				B316C85D2DB1EA5000733EA0 /* HippoAnalyticsTests */,
-				B316C87A2DB1F27D00733EA0 /* HippoPayments */,
-				B316C8842DB1F27D00733EA0 /* HippoPaymentsTests */,
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+				B316CA302DB3676A00733EA0 /* TDD */,
+				B316CA3D2DB3676C00733EA0 /* TDDTests */,
+				B316CA472DB3676C00733EA0 /* TDDUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-<<<<<<< HEAD
-		B316C9C42DB3633C00733EA0 /* Resources */ = {
-=======
-		B316C8522DB1EA4F00733EA0 /* Resources */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA2F2DB3676A00733EA0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
-		B316C9D12DB3633D00733EA0 /* Resources */ = {
-=======
-		B316C85C2DB1EA5000733EA0 /* Resources */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA3C2DB3676C00733EA0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
-		B316C9DB2DB3633D00733EA0 /* Resources */ = {
-=======
-		B316C8792DB1F27D00733EA0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B316C8832DB1F27D00733EA0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B366B1D22DACD4D4007C72B6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B366B1DF2DACD4D6007C72B6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B366B2282DAD0484007C72B6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B366B2342DAD0486007C72B6 /* Resources */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA462DB3676C00733EA0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -778,68 +232,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-<<<<<<< HEAD
-		B316C9C22DB3633C00733EA0 /* Sources */ = {
-=======
-		B316C8502DB1EA4F00733EA0 /* Sources */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA2D2DB3676A00733EA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
-		B316C9CF2DB3633D00733EA0 /* Sources */ = {
-=======
-		B316C85A2DB1EA5000733EA0 /* Sources */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA3A2DB3676C00733EA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
-		B316C9D92DB3633D00733EA0 /* Sources */ = {
-=======
-		B316C8772DB1F27D00733EA0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B316C8812DB1F27D00733EA0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B366B1D02DACD4D4007C72B6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B366B1DD2DACD4D6007C72B6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B366B2262DAD0484007C72B6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B366B2322DAD0486007C72B6 /* Sources */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA442DB3676C00733EA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -849,274 +256,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-<<<<<<< HEAD
-		B316C9D52DB3633D00733EA0 /* PBXTargetDependency */ = {
+		B316CA402DB3676C00733EA0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B316C9C52DB3633C00733EA0 /* TDD */;
-			targetProxy = B316C9D42DB3633D00733EA0 /* PBXContainerItemProxy */;
+			target = B316CA302DB3676A00733EA0 /* TDD */;
+			targetProxy = B316CA3F2DB3676C00733EA0 /* PBXContainerItemProxy */;
 		};
-		B316C9DF2DB3633D00733EA0 /* PBXTargetDependency */ = {
+		B316CA4A2DB3676C00733EA0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B316C9C52DB3633C00733EA0 /* TDD */;
-			targetProxy = B316C9DE2DB3633D00733EA0 /* PBXContainerItemProxy */;
-=======
-		B316C8612DB1EA5000733EA0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B316C8532DB1EA4F00733EA0 /* HippoAnalytics */;
-			targetProxy = B316C8602DB1EA5000733EA0 /* PBXContainerItemProxy */;
-		};
-		B316C8632DB1EA5000733EA0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B366B1D32DACD4D4007C72B6 /* TDD */;
-			targetProxy = B316C8622DB1EA5000733EA0 /* PBXContainerItemProxy */;
-		};
-		B316C8682DB1EA5000733EA0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B316C8532DB1EA4F00733EA0 /* HippoAnalytics */;
-			targetProxy = B316C8672DB1EA5000733EA0 /* PBXContainerItemProxy */;
-		};
-		B316C8882DB1F27D00733EA0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B316C87A2DB1F27D00733EA0 /* HippoPayments */;
-			targetProxy = B316C8872DB1F27D00733EA0 /* PBXContainerItemProxy */;
-		};
-		B316C88A2DB1F27D00733EA0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B366B1D32DACD4D4007C72B6 /* TDD */;
-			targetProxy = B316C8892DB1F27D00733EA0 /* PBXContainerItemProxy */;
-		};
-		B316C88F2DB1F27D00733EA0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B316C87A2DB1F27D00733EA0 /* HippoPayments */;
-			targetProxy = B316C88E2DB1F27D00733EA0 /* PBXContainerItemProxy */;
-		};
-		B366B1E32DACD4D6007C72B6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B366B1D32DACD4D4007C72B6 /* TDD */;
-			targetProxy = B366B1E22DACD4D6007C72B6 /* PBXContainerItemProxy */;
-		};
-		B366B2382DAD0486007C72B6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B366B2292DAD0484007C72B6 /* Albertos */;
-			targetProxy = B366B2372DAD0486007C72B6 /* PBXContainerItemProxy */;
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+			target = B316CA302DB3676A00733EA0 /* TDD */;
+			targetProxy = B316CA492DB3676C00733EA0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-<<<<<<< HEAD
-		B316C9E52DB3633D00733EA0 /* Debug */ = {
-=======
-		B316C86C2DB1EA5000733EA0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59FP2PXRXK;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.HippoAnalytics;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_MODULE = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B316C86D2DB1EA5000733EA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59FP2PXRXK;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.HippoAnalytics;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_MODULE = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B316C86E2DB1EA5000733EA0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59FP2PXRXK;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.HippoAnalyticsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TDD";
-			};
-			name = Debug;
-		};
-		B316C86F2DB1EA5000733EA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59FP2PXRXK;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.HippoAnalyticsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TDD";
-			};
-			name = Release;
-		};
-		B316C8932DB1F27D00733EA0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59FP2PXRXK;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.HippoPayments;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_MODULE = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B316C8942DB1F27D00733EA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59FP2PXRXK;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.HippoPayments;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_MODULE = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B316C8962DB1F27D00733EA0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59FP2PXRXK;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.HippoPaymentsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TDD";
-			};
-			name = Debug;
-		};
-		B316C8972DB1F27D00733EA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59FP2PXRXK;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.HippoPaymentsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TDD";
-			};
-			name = Release;
-		};
-		B366B1F32DACD4D6007C72B6 /* Debug */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA502DB3676C00733EA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1180,11 +333,7 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
-		B316C9E62DB3633D00733EA0 /* Release */ = {
-=======
-		B366B1F42DACD4D6007C72B6 /* Release */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA512DB3676C00733EA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1241,11 +390,7 @@
 			};
 			name = Release;
 		};
-<<<<<<< HEAD
-		B316C9E82DB3633D00733EA0 /* Debug */ = {
-=======
-		B366B1F62DACD4D6007C72B6 /* Debug */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA532DB3676C00733EA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1273,11 +418,7 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
-		B316C9E92DB3633D00733EA0 /* Release */ = {
-=======
-		B366B1F72DACD4D6007C72B6 /* Release */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA542DB3676C00733EA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1305,11 +446,7 @@
 			};
 			name = Release;
 		};
-<<<<<<< HEAD
-		B316C9EB2DB3633D00733EA0 /* Debug */ = {
-=======
-		B366B1F92DACD4D6007C72B6 /* Debug */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA562DB3676C00733EA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1328,11 +465,7 @@
 			};
 			name = Debug;
 		};
-<<<<<<< HEAD
-		B316C9EC2DB3633D00733EA0 /* Release */ = {
-=======
-		B366B1FA2DACD4D6007C72B6 /* Release */ = {
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+		B316CA572DB3676C00733EA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1351,8 +484,7 @@
 			};
 			name = Release;
 		};
-<<<<<<< HEAD
-		B316C9EE2DB3633D00733EA0 /* Debug */ = {
+		B316CA592DB3676C00733EA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1369,235 +501,63 @@
 			};
 			name = Debug;
 		};
-		B316C9EF2DB3633D00733EA0 /* Release */ = {
+		B316CA5A2DB3676C00733EA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-=======
-		B366B2492DAD0486007C72B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59FP2PXRXK;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.Albertos;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		B366B24A2DAD0486007C72B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59FP2PXRXK;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.Albertos;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		B366B24C2DAD0486007C72B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59FP2PXRXK;
 				GENERATE_INFOPLIST_FILE = YES;
-<<<<<<< HEAD
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.TDDUITests;
-=======
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.AlbertosTests;
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-<<<<<<< HEAD
 				TEST_TARGET_NAME = TDD;
-=======
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Albertos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Albertos";
-			};
-			name = Debug;
-		};
-		B366B24D2DAD0486007C72B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 59FP2PXRXK;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Tom.AlbertosTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Albertos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Albertos";
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-<<<<<<< HEAD
-		B316C9C12DB3633C00733EA0 /* Build configuration list for PBXProject "TDD" */ = {
+		B316CA2C2DB3676A00733EA0 /* Build configuration list for PBXProject "TDD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B316C9E52DB3633D00733EA0 /* Debug */,
-				B316C9E62DB3633D00733EA0 /* Release */,
-=======
-		B316C8702DB1EA5000733EA0 /* Build configuration list for PBXNativeTarget "HippoAnalytics" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B316C86C2DB1EA5000733EA0 /* Debug */,
-				B316C86D2DB1EA5000733EA0 /* Release */,
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+				B316CA502DB3676C00733EA0 /* Debug */,
+				B316CA512DB3676C00733EA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-<<<<<<< HEAD
-		B316C9E72DB3633D00733EA0 /* Build configuration list for PBXNativeTarget "TDD" */ = {
+		B316CA522DB3676C00733EA0 /* Build configuration list for PBXNativeTarget "TDD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B316C9E82DB3633D00733EA0 /* Debug */,
-				B316C9E92DB3633D00733EA0 /* Release */,
-=======
-		B316C8712DB1EA5000733EA0 /* Build configuration list for PBXNativeTarget "HippoAnalyticsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B316C86E2DB1EA5000733EA0 /* Debug */,
-				B316C86F2DB1EA5000733EA0 /* Release */,
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+				B316CA532DB3676C00733EA0 /* Debug */,
+				B316CA542DB3676C00733EA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-<<<<<<< HEAD
-		B316C9EA2DB3633D00733EA0 /* Build configuration list for PBXNativeTarget "TDDTests" */ = {
+		B316CA552DB3676C00733EA0 /* Build configuration list for PBXNativeTarget "TDDTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B316C9EB2DB3633D00733EA0 /* Debug */,
-				B316C9EC2DB3633D00733EA0 /* Release */,
-=======
-		B316C8922DB1F27D00733EA0 /* Build configuration list for PBXNativeTarget "HippoPayments" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B316C8932DB1F27D00733EA0 /* Debug */,
-				B316C8942DB1F27D00733EA0 /* Release */,
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+				B316CA562DB3676C00733EA0 /* Debug */,
+				B316CA572DB3676C00733EA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-<<<<<<< HEAD
-		B316C9ED2DB3633D00733EA0 /* Build configuration list for PBXNativeTarget "TDDUITests" */ = {
+		B316CA582DB3676C00733EA0 /* Build configuration list for PBXNativeTarget "TDDUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B316C9EE2DB3633D00733EA0 /* Debug */,
-				B316C9EF2DB3633D00733EA0 /* Release */,
-=======
-		B316C8952DB1F27D00733EA0 /* Build configuration list for PBXNativeTarget "HippoPaymentsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B316C8962DB1F27D00733EA0 /* Debug */,
-				B316C8972DB1F27D00733EA0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B366B1CF2DACD4D4007C72B6 /* Build configuration list for PBXProject "TDD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B366B1F32DACD4D6007C72B6 /* Debug */,
-				B366B1F42DACD4D6007C72B6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B366B1F52DACD4D6007C72B6 /* Build configuration list for PBXNativeTarget "TDD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B366B1F62DACD4D6007C72B6 /* Debug */,
-				B366B1F72DACD4D6007C72B6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B366B1F82DACD4D6007C72B6 /* Build configuration list for PBXNativeTarget "TDDTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B366B1F92DACD4D6007C72B6 /* Debug */,
-				B366B1FA2DACD4D6007C72B6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B366B2482DAD0486007C72B6 /* Build configuration list for PBXNativeTarget "Albertos" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B366B2492DAD0486007C72B6 /* Debug */,
-				B366B24A2DAD0486007C72B6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B366B24B2DAD0486007C72B6 /* Build configuration list for PBXNativeTarget "AlbertosTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B366B24C2DAD0486007C72B6 /* Debug */,
-				B366B24D2DAD0486007C72B6 /* Release */,
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+				B316CA592DB3676C00733EA0 /* Debug */,
+				B316CA5A2DB3676C00733EA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-<<<<<<< HEAD
-	rootObject = B316C9BE2DB3633C00733EA0 /* Project object */;
-=======
-	rootObject = B366B1CC2DACD4D4007C72B6 /* Project object */;
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
+	rootObject = B316CA292DB3676A00733EA0 /* Project object */;
 }

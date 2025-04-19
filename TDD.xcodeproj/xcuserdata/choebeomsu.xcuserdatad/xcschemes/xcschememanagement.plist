@@ -4,33 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-<<<<<<< HEAD
 		<key>TDD.xcscheme_^#shared#^_</key>
-=======
-		<key>Albertos.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-		<key>HippoAnalytics.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>HippoPayments.xcscheme_^#shared#^_</key>
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-<<<<<<< HEAD
-=======
-		<key>TDD.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
->>>>>>> 0a0ab4aa9c588833f22e5fce9431ab5a88559dbb
 	</dict>
 </dict>
 </plist>
