@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "8BB55C44-8EB6-4718-8701-EC42259A8CE5",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Albertos.xcodeproj",
+      "identifier" : "B311BEEA2DB367F800BCE0A0",
+      "name" : "Albertos"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Albertos.xcodeproj",
+        "identifier" : "B311BEF72DB367F900BCE0A0",
+        "name" : "AlbertosTests"
+      }
+    }
+  ],
+  "version" : 1
+}

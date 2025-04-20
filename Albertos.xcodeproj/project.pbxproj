@@ -19,6 +19,7 @@
 /* Begin PBXFileReference section */
 		B311BEEB2DB367F800BCE0A0 /* Albertos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albertos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B311BEF82DB367F900BCE0A0 /* AlbertosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F330372DB51E7B0019FBB6 /* Albertos.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Albertos.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -55,6 +56,7 @@
 		B311BEE22DB367F800BCE0A0 = {
 			isa = PBXGroup;
 			children = (
+				B3F330372DB51E7B0019FBB6 /* Albertos.xctestplan */,
 				B311BEED2DB367F800BCE0A0 /* Albertos */,
 				B311BEFB2DB367F900BCE0A0 /* AlbertosTests */,
 				B311BEEC2DB367F800BCE0A0 /* Products */,

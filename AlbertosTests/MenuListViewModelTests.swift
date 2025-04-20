@@ -66,6 +66,76 @@ final class MenuListViewModelTests: XCTestCase {
         wait(for: [expectation], timeout: 1)
     }
     
-    func testRetryFetchesMenuAgain() {}
-    func testRetryAfterFailureFetchesMenuAgainAndSucceeds() {}
+    func testRetryFetchesMenuAgain() {
+        let expectation = expectation(description: "Fetches menu twice")
+        expectation.expectedFulfillmentCount = 2
+        
+        var fetchCount = 0
+        let stubMenuItems: [MenuItem] = [.fixture()]
+        
+        let menuFetchingStub = MenuFetchingStub { () -> AnyPublisher<[MenuItem], Error> in
+            fetchCount += 1
+            expectation.fulfill()
+            
+            return Just(stubMenuItems)
+                .setFailureType(to: Error.self)
+                .eraseToAnyPublisher()
+        }
+        
+        let viewModel = MenuList.ViewModel(menuFetching: menuFetchingStub)
+        
+        viewModel.retry()
+        
+        wait(for: [expectation], timeout: 1)
+        XCTAssertEqual(fetchCount, 2)
+    }
+    
+    func testRetryAfterFailureFetchesMenuAgainAndSucceeds() {
+        let expectation = XCTestExpectation(description: "Fetches menu twice, fails then succeeds")
+        var fetchCount = 0
+        let stubbedMenu = [MenuItem.fixture()]
+        let stubbedError = NSError(domain: "test", code: 0, userInfo: nil)
+        
+        let menuFetchingStub = MenuFetchingStub { () -> AnyPublisher<[MenuItem], Error> in
+            fetchCount += 1
+            if fetchCount == 1 {
+                return Fail(error: stubbedError).eraseToAnyPublisher()
+            } else {
+                return Just(stubbedMenu)
+                    .setFailureType(to: Error.self)
+                    .eraseToAnyPublisher()
+            }
+        }
+        
+        let viewModel = MenuList.ViewModel(menuFetching: menuFetchingStub)
+        var results: [Result<[MenuSection], Error>] = []
+        
+        viewModel.$sections
+            .dropFirst()
+            .sink { value in
+                results.append(value)
+                if results.count == 2 {
+                    expectation.fulfill()
+                }
+            }
+            .store(in: &cancellables)
+        
+        viewModel.retry()
+        
+        wait(for: [expectation], timeout: 1)
+        XCTAssertEqual(fetchCount, 2)
+        XCTAssertEqual(results.count, 2)
+        XCTAssertTrue(results[0].isFailure)
+        XCTAssertTrue(results[1].isSuccess)
+    }
+}
+
+extension Result {
+    var isFailure: Bool { !isSuccess }
+    var isSuccess: Bool {
+        switch self {
+            case .success: true
+            case .failure: false
+        }
+    }
 }

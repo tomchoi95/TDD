@@ -15,13 +15,22 @@ protocol MenuFetching {
 // 네트워크 통신 실패를 내가 임의로 값을 보낼 수 있게 하는 Stub 객체.
 class MenuFetchingStub: MenuFetching {
     private var result: Result<[MenuItem], Error>
+    private var fetchingClosure: (() -> AnyPublisher<[MenuItem], Error>)?
+    
+    init(_ fetchingClosure: @escaping () -> AnyPublisher<[MenuItem], Error>) {
+        self.result = .success([])
+        self.fetchingClosure = fetchingClosure
+    }
     
     init(result: Result<[MenuItem], Error>) {
         self.result = result
     }
     
     func fetchMenu() -> AnyPublisher<[MenuItem], Error> {
-        result.publisher
+        if let fetchingClosure = fetchingClosure {
+            return fetchingClosure()
+        }
+        return result.publisher
             .delay(for: 0.1, scheduler: RunLoop.main)
             .eraseToAnyPublisher()
     }
